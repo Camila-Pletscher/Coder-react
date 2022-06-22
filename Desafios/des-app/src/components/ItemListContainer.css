@@ -1,0 +1,28 @@
+.cont-img {
+    background-color: #fff;
+
+}
+
+.cont-img img {
+    width: 240px;
+}
+
+.saludo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #B19BC4;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 60px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: solid 1px #B19BC4;
+    color: #B19BC4;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
