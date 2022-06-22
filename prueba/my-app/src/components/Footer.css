@@ -1,0 +1,10 @@
+.foot img {
+    width: 30px;
+}
+
+.cont-foot {
+    display: flex;
+    justify-content: center;
+    background-color: #DECAE2;
+    padding: 10px;
+}

@@ -1,0 +1,27 @@
+.cont-img {
+    background-color: #B19BC4;
+
+}
+
+.cont-img img {
+    width: 240px;
+}
+
+.saludo p {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 60px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
