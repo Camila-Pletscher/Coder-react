@@ -1,5 +1,5 @@
 import './CartWidget.css';
-import logo from '../assets/images/logo-pyc.png'
+
 
 import 'materialize-css/dist/css/materialize.min.css';
 
