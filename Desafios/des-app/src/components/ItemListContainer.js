@@ -3,12 +3,18 @@ import logo from '../assets/images/logo-pyc.png'
 
 import 'materialize-css/dist/css/materialize.min.css';
 import ItemCount from './ItemCount';
+import ItemList from './ItemList';
+
 
 
 function ItemListContainer() {
+
+    
+
     return (
         <div className='cont-img container-fluid center'>
-            <ItemCount stock={10} />
+            <ItemList />
+            {/* <ItemCount stock={10} /> */}
          <div className='row'>
             <div className='col-4 center saludo'>
                 <img src={logo} />

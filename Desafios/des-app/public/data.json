@@ -1,0 +1,19 @@
+[
+    {
+        "nombre": "Identidad Visual",
+        "stock" : 10,
+        "precio" : 1000,
+        "id" : 1,
+        "descripcion" : "Este pack es ideal para emprendedores que quieran hacer de su marca algo mucho mas profesional",
+        "img" : ""
+    },
+
+    {
+        "nombre": "Pack Cafe",
+        "stock" : 10,
+        "precio" : 2000,
+        "id" : 2,
+        "descripcion" : "Este packgaing para nuevas marcas de cafe",
+        "img" : ""
+    }
+]
