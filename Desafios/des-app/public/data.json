@@ -5,7 +5,7 @@
         "precio" : 1000,
         "id" : 1,
         "descripcion" : "Este pack es ideal para emprendedores que quieran hacer de su marca algo mucho mas profesional",
-        "img" : "/Users/camila.pletscher/Documents/Cami/Coder-react/Desafios/des-app/src/assets/images/identidad-visual.png"
+        "img" : "./assets/images/identidad-visual.png"
     },
 
     {
@@ -14,6 +14,6 @@
         "precio" : 2000,
         "id" : 2,
         "descripcion" : "Este packgaing para nuevas marcas de cafe",
-        "img" : "/Users/camila.pletscher/Documents/Cami/Coder-react/Desafios/des-app/src/assets/images/pack-cafe.jpeg"
+        "img" : "./assets/images/pack-cafe.jpeg"
     }
 ]
