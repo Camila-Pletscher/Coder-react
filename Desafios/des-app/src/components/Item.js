@@ -13,7 +13,6 @@ function Item({product, price, description}) {
           <div className="card-content white-text">
             <span className="card-title">{ product }</span>
             <p>Precio: ${ price }</p>
-            <p>{description} </p>
           </div>
           <div className="card-action">
             <a href="#" className="white-text">Ver detalle del servicio</a>
