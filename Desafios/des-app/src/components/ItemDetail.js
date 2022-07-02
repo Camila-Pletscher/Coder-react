@@ -1,28 +1,24 @@
-import 'materialize-css/dist/css/materialize.min.css';
+import "materialize-css/dist/css/materialize.min.css";
 
-function ItemDetail({product, price, description, img} ) {
-    
-
-    
-    return (
-
-        <div className="row">
+function ItemDetail(props) {
+  return (
+    <div className="container">
+      <div className="row">
         <div className="col s12 m7">
-          <div className="card">
+          <div className="card deep-purple lighten-3">
             <div className="card-image">
-              <img src={img} alt='img' />
-              <span className="card-title">{product}</span>
+              <img src={props.img} alt="img" />
+              <span className="card-title">{props.product}</span>
             </div>
             <div className="card-content">
-                <p>Precio: ${price}</p>
-              <p>{description}</p>
+              <p>Precio: ${props.price}</p>
+              <p>{props.description}</p>
             </div>
           </div>
         </div>
       </div>
-        
-        
-    );
-  }
-  
-  export default ItemDetail;
+    </div>
+  );
+}
+
+export default ItemDetail;

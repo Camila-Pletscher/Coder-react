@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import NavBar from './components/NavBar';
 
 
 function App() {
   return (
+    
     <>
-    <NavBar />
-    <ItemListContainer />
-    <ItemDetailContainer />
+    <NavBar></NavBar>
+    <ItemListContainer></ItemListContainer>
     </>
+    
+    
 
   );
 }
