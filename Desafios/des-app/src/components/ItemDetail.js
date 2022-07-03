@@ -9,7 +9,7 @@ function ItemDetail(props) {
       <div className="row">
         <div className="col s6">
           
-          <img src ={props.img} alt={props.product} />
+          <img src={props.img} alt={props.product} />
         
         </div>
         <div className="col s6 name">
