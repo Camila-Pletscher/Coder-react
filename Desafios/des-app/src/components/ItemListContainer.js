@@ -1,5 +1,5 @@
 import './ItemListContainer.css';
-import logo from '../assets/images/logo-pyc.png'
+import logo from '../logo-pyc.png'
 
 import 'materialize-css/dist/css/materialize.min.css';
 // import ItemCount from './ItemCount';
