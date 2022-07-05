@@ -1,0 +1,90 @@
+[
+    {
+        "nombre": "Identidad Visual",
+        "precio" : 15000,
+        "id" : 1,
+        "subtitulo" : "Este pack es ideal para emprendedores que quieran hacer de su marca algo mucho más profesional",
+        "image" : "./assets/images/identidad-visual.png"
+    },
+
+    {
+        "nombre": "Tarjetas de presentación",
+        "precio" : 1500,
+        "id" : 2,
+        "subtitulo" : "Las tarjetas de presentación con una herramienta útil para dar tu información a posibles clientes",
+        "image" : "./assets/images/identidad-visual.png"
+    },
+
+    {
+        "nombre": "Bolsas",
+        "precio" : 2500,
+        "id" : 3,
+        "subtitulo" : "Diseño de bolsas de todo tipo personalizadas",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Folletos",
+        "precio" : 2500,
+        "id" : 4,
+        "subtitulo" : "Diseño de folletos impresos o digitales",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Vouchers",
+        "precio" : 2500,
+        "id" : 5,
+        "subtitulo" : "Vouchers de regalo, súper prácticos",
+        "image" : "./assets/images/identidad-visual.png"
+    },
+
+    {
+        "nombre": "Stickers",
+        "precio" : 2500,
+        "id" : 6,
+        "subtitulo" : "Stickers para ponerle un toque a tu emprendimiento",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Menús",
+        "precio" : 2500,
+        "id" : 7,
+        "subtitulo" : "Para ofrecer tus productos",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Entradas",
+        "precio" : 2500,
+        "id" : 8,
+        "subtitulo" : "Para eventos",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Certificados",
+        "precio" : 2500,
+        "id" : 9,
+        "subtitulo" : "Diseños personalizados con la temática que necesites",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Hoja membretada",
+        "precio" : 2500,
+        "id" : 10,
+        "subtitulo" : "El toque formal nunca está demás",
+        "image" : "./assets/images/identidad-visual.png"
+    }, 
+
+    {
+        "nombre": "Catálogos",
+        "precio" : 2500,
+        "id" : 11,
+        "subtitulo" : "Ofrecé tus productos con precios y detalles",
+        "image" : "./assets/images/identidad-visual.png"
+    }
+
+]
