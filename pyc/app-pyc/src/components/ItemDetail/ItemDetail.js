@@ -1,29 +1,20 @@
-import { useParams } from "react-router-dom";
-import styles from "./ItemDetail.module.css";
+import Detail from '../Detail/Detail';
+import styles from './ItemDetail.module.css'
 
-function ItemDetail(props) {
-
-  const { detId } = useParams();
-  console.log(detId);
-
-
-
-  return (
-    <div className={styles.contDetail}>
-      <div className="row">
-        <div className="col s6">
-          <img src='' alt={props.product} />
+function ItemDetail(props){
+    return (
+        <div className={styles.container}>
+            {props.services.map ((service) => (
+                <Detail 
+                    product={service.nombre}
+                    price={service.precio}
+                    subtitle={service.subtitulo}
+                    img={service.image}
+                    id={service.id}
+                />
+            ))}
         </div>
-        <div className="col s6 name">
-          <p>{props.product}</p>
-          <p>Precio: ${props.price}</p>
-        </div>
-        <div className="col s12">
-          <p className="center">{props.subtitle}</p>
-        </div>
-      </div>
-    </div>
-  );
+    )
 }
 
 export default ItemDetail;

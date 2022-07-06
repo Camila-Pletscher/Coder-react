@@ -3,6 +3,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import Item from '../Item/Item';
 
 function ItemList(props) {
+    
     return(
         <div className={styles.cards}>
             {props.services.map ((service) => (
@@ -12,6 +13,7 @@ function ItemList(props) {
                     subtitle={service.subtitulo}
                     img={service.image}
                     id={service.id}
+                    category={service.categoria}
                 />
             ))}
         </div>

@@ -11,14 +11,16 @@ function Item(props) {
             <div className={styles.image}>
               <img src={props.img} alt={props.product} />
             
-            <Link to={`/services/${props.id}`}>
+            
                 <span className="card-title">{props.product}</span>
-            </Link>
+            
             </div>
             <p>Precio: ${props.price}</p>
           </div>
           <div className="card-action">
+            <Link to={`/service/${props.id}`}>
             <p>Ver detalle del servicio</p>
+            </Link>
             <i className="material-icons white-text">add_shopping_cart</i>
           </div>
         </div>

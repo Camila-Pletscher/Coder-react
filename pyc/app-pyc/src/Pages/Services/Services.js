@@ -1,8 +1,8 @@
-import Container from "../../components/Container/Container";
+import ItemListContainer from "../../components/ItemListContainer/ItemListContainer";
 
 function Services(){
     return (
-        <Container/>
+        <ItemListContainer/>
     )
 }
 
