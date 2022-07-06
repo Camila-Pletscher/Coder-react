@@ -14,7 +14,7 @@
         "precio" : 1500,
         "id" : 2,
         "subtitulo" : "Las tarjetas de presentación con una herramienta útil para dar tu información a posibles clientes",
-        "image" : "./assets/images/identidad-visual.png"
+        "image" : "./assets/images/tarjetas.png"
     },
 
     {
@@ -23,7 +23,7 @@
         "precio" : 2500,
         "id" : 3,
         "subtitulo" : "Diseño de bolsas de todo tipo personalizadas",
-        "image" : "./assets/images/identidad-visual.png"
+        "image" : "./assets/images/bolsas.png"
     }, 
 
     {
@@ -50,7 +50,7 @@
         "precio" : 2500,
         "id" : 6,
         "subtitulo" : "Stickers para ponerle un toque a tu emprendimiento",
-        "image" : "./assets/images/identidad-visual.png"
+        "image" : "./assets/images/stickers.png"
     }, 
 
     {
@@ -104,7 +104,7 @@
         "precio" : 2500,
         "id" : 12,
         "subtitulo" : "Reutiliza tus plantillas para redes sociales",
-        "image" : "./assets/images/identidad-visual.png"
+        "image" : "./assets/images/plantillas.png"
     }
 
 ]

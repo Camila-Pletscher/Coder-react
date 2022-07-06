@@ -8,9 +8,13 @@ function Item(props) {
       
         <div className={styles.card}>
           <div className="card-content white-text">
+            <div className={styles.image}>
+              <img src={props.img} alt={props.product} />
+            
             <Link to={`/services/${props.id}`}>
                 <span className="card-title">{props.product}</span>
             </Link>
+            </div>
             <p>Precio: ${props.price}</p>
           </div>
           <div className="card-action">

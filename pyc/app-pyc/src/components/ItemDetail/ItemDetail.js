@@ -6,6 +6,8 @@ function ItemDetail(props) {
   const { detId } = useParams();
   console.log(detId);
 
+
+
   return (
     <div className={styles.contDetail}>
       <div className="row">
