@@ -1,6 +1,7 @@
 [
     {
         "nombre": "Identidad Visual",
+        "categoria": "Identidad",
         "precio" : 15000,
         "id" : 1,
         "subtitulo" : "Este pack es ideal para emprendedores que quieran hacer de su marca algo mucho más profesional",
@@ -9,6 +10,7 @@
 
     {
         "nombre": "Tarjetas de presentación",
+        "categoria": "Packaging",
         "precio" : 1500,
         "id" : 2,
         "subtitulo" : "Las tarjetas de presentación con una herramienta útil para dar tu información a posibles clientes",
@@ -17,6 +19,7 @@
 
     {
         "nombre": "Bolsas",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 3,
         "subtitulo" : "Diseño de bolsas de todo tipo personalizadas",
@@ -25,6 +28,7 @@
 
     {
         "nombre": "Folletos",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 4,
         "subtitulo" : "Diseño de folletos impresos o digitales",
@@ -33,6 +37,7 @@
 
     {
         "nombre": "Vouchers",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 5,
         "subtitulo" : "Vouchers de regalo, súper prácticos",
@@ -41,6 +46,7 @@
 
     {
         "nombre": "Stickers",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 6,
         "subtitulo" : "Stickers para ponerle un toque a tu emprendimiento",
@@ -49,6 +55,7 @@
 
     {
         "nombre": "Menús",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 7,
         "subtitulo" : "Para ofrecer tus productos",
@@ -57,6 +64,7 @@
 
     {
         "nombre": "Entradas",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 8,
         "subtitulo" : "Para eventos",
@@ -65,6 +73,7 @@
 
     {
         "nombre": "Certificados",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 9,
         "subtitulo" : "Diseños personalizados con la temática que necesites",
@@ -73,6 +82,7 @@
 
     {
         "nombre": "Hoja membretada",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 10,
         "subtitulo" : "El toque formal nunca está demás",
@@ -81,9 +91,19 @@
 
     {
         "nombre": "Catálogos",
+        "categoria": "Packaging",
         "precio" : 2500,
         "id" : 11,
         "subtitulo" : "Ofrecé tus productos con precios y detalles",
+        "image" : "./assets/images/identidad-visual.png"
+    },
+
+    {
+        "nombre": "Plantillas Canva",
+        "categoria": "Redes",
+        "precio" : 2500,
+        "id" : 12,
+        "subtitulo" : "Reutiliza tus plantillas para redes sociales",
         "image" : "./assets/images/identidad-visual.png"
     }
 

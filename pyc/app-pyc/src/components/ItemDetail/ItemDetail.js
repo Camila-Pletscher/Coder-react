@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
 import styles from "./ItemDetail.module.css";
 
 function ItemDetail(props) {
 
+  const { detId } = useParams();
+  console.log(detId);
 
   return (
     <div className={styles.contDetail}>

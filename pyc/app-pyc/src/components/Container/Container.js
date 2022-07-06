@@ -3,11 +3,11 @@ import 'materialize-css/dist/css/materialize.min.css';
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
+import { Link, useParams } from 'react-router-dom';
 
 function Container() {
 
     const [info, setInfo] = useState([]);
-
 
     useEffect(() => {
         setTimeout(
@@ -19,8 +19,9 @@ function Container() {
 
     return (
         <div className='container'>
+            
             <ItemList services={info}/>
-            <ItemDetailContainer services={info}/>
+            {/* <ItemDetailContainer services={info}/> */}
         </div>
     );
 }
