@@ -2,26 +2,38 @@ import './Container.module.css'
 import 'materialize-css/dist/css/materialize.min.css';
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function Container() {
 
     const [info, setInfo] = useState([]);
 
+    const {idcategoria}=useParams();
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
-        setTimeout(
-            fetch ('data.json')
+
+        setIsLoading(true);
+
+        setTimeout(() => {
+            fetch ('../data/data.json')
             .then ((resp) => resp.json())
-            .then ((data) => setInfo (data))
-            ,2000)
-    })
+            .then((data) => {setInfo(idcategoria ? data.filter((item) => item.categoria === idcategoria) : data )})
+            .finally(() => setIsLoading(false))
+        },2000);
+    }, [idcategoria])
 
     return (
-        <div className='container'>
+        <div>
+            {
+                isLoading ? (<h1>Cargando...</h1>) : (
+                    <div className='container'>
             
-            <ItemList services={info}/>
-            {/* <ItemDetailContainer services={info}/> */}
+                    <ItemList services={info}/>
+            
+                    </div>
+                )
+            }
         </div>
     );
 }

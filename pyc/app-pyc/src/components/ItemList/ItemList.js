@@ -7,6 +7,8 @@ function ItemList(props) {
         <div className={styles.cards}>
             {props.services.map ((service) => (
                 <Item
+                key={service.id}
+                
                     product={service.nombre}
                     price={service.precio}
                     subtitle={service.subtitulo}

@@ -2,16 +2,19 @@ import styles from "./Item.module.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
 
-function Item(props) {
+function Item({product, price, img, id}) {
   return (
     
       
         <div className={styles.card}>
           <div className="card-content white-text">
-            <Link to={`/services/${props.id}`}>
-                <span className="card-title">{props.product}</span>
+            <div className={styles.image}>
+              <img src={img} alt={product} />
+            </div>
+            <Link to={`/item/${id}`}>
+                <span className="card-title">{product}</span>
             </Link>
-            <p>Precio: ${props.price}</p>
+            <p>Precio: ${price}</p>
           </div>
           <div className="card-action">
             <p>Ver detalle del servicio</p>

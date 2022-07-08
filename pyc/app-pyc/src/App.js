@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Proyects from './Pages/Proyects/Proyects';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import Welcome from './Pages/Welcome/Welcome';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -15,11 +16,11 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Welcome></Welcome>}></Route>
-        <Route exact path="/home" element={<Home></Home>}></Route>
-        <Route exact path="/services" element={<Services></Services>}></Route>
+        <Route exact path="/" element={<Container/>}></Route>
+        <Route exact path="/home" element={<Container/>}></Route>
+        <Route exact path="/categoria/:idcategoria" element={<Container/>}></Route>
         
-        <Route exact path="/services/:detId" element={<ItemDetail></ItemDetail>}></Route>
+        <Route exact path="/item/:iditem" element={<ItemDetailContainer/>}></Route>
         <Route exact path="/proyects" element={<Proyects></Proyects>}></Route>
       </Routes>
     </div>
