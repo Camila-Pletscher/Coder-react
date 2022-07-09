@@ -4,32 +4,34 @@ import logo from '../logo-pyc.png'
 import 'materialize-css/dist/css/materialize.min.css';
 // import ItemCount from './ItemCount';
 import ItemList from './ItemList';
-import ItemDetailContainer from './ItemDetailContainer';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 
 
 function ItemListContainer() {
 
-    const [info, setInfo] = useState([]);
+    const [items, setItems] = useState([]);
+
+    const {idcategoria}=useParams();
 
     useEffect(() => {
-        setTimeout(
-            fetch ('data.json')
+        setTimeout(() => {
+            fetch ('../data/data.json')
             .then ((resp) => resp.json())
-            .then ((data) => setInfo (data))
-            ,2000)
-    })
-
+            .then((data) => {setItems(idcategoria ? data.filter((items) => items.categoria === idcategoria) : data)})
+        },2000)
+    }, [idcategoria])
+    console.log(items)
     
 
     return (
         <div className='cont-img container-fluid center'>
                 
-                <ItemList services={info}/>
-                <ItemDetailContainer services={info}/>
+                <ItemList items={items}/>
+                
             
-            {/* <ItemCount stock={10} /> */}
+            
          <div className='row'>
             <div className='col-4 center saludo'>
                 <img src={logo} alt='' />

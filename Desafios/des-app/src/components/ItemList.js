@@ -5,18 +5,15 @@ import 'materialize-css/dist/css/materialize.min.css';
 import Item from './Item';
 
 
-function ItemList(props ) {
-    
+function ItemList({items} ) {
+    console.log(items)
 
     
     return (
         <div className='container'>
-            {props.services.map ((service) => (
+            {items?.map ((item) => (
                 <Item 
-                    product={service.nombre}
-                    price={service.precio}
-                    description={service.descripcion}
-                    img={service.image}
+                    {...item} key={item.id}
                 />
             ))}
         </div>
