@@ -1,0 +1,43 @@
+.contDetail {
+    display: flex;
+    background-color: rgba(241, 232, 220, 0.396);
+}
+
+.contImage {
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contImage img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contInfo {
+    width: 50%;
+    margin: 2rem;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #B19BC4;
+}
+
+.descrip {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding: 14px 0px;
+    color: rgb(40, 40, 40);
+    line-height: 2.5rem;
+}
+
+.precio {
+    background-color: #B19BC4;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+}

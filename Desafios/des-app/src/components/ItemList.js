@@ -1,5 +1,5 @@
 
-import './ItemList.css';
+import styles from './ItemList.module.css';
 import 'materialize-css/dist/css/materialize.min.css';
 
 import Item from './Item';
@@ -10,7 +10,7 @@ function ItemList({items} ) {
 
     
     return (
-        <div className='container'>
+        <div className={styles.contCard}>
             {items?.map ((item) => (
                 <Item 
                     {...item} key={item.id}

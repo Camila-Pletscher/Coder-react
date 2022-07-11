@@ -1,8 +1,8 @@
 import './NavBar.css';
-
+import logo from '../logo-pyc.png'
 import 'materialize-css/dist/css/materialize.min.css';
-import CartWidget from './CartWidget';
-import { NavLink } from 'react-router-dom';
+
+import {  NavLink } from 'react-router-dom';
 
 
 function NavBar() {
@@ -12,10 +12,13 @@ function NavBar() {
       {id: 'Redes', address: '/categoria/Redes', text: 'Redes'},
     ]
     return (
+      
     <nav>
       <div className="nav-wrapper">
-        
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
+        <div className='logo brand-logo center'>
+          <img src={logo} alt="Logo"/>
+        </div>
+        <ul id="nav-mobile" className="right ">
           <li><NavLink activeClassName='active' to='/home'>Home</NavLink></li>
           {
             categories.map((cat) =>{

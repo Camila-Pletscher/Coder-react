@@ -1,16 +1,13 @@
-.contItemList {
-    width: 100%;
+.contCard {
     display: flex;
+    width: 70%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-}
-
-.progress {
-    width: 80% !important;
-    margin: 3rem auto !important;
 
 }
 
+.contPre {
+    display: flex !important;
+}

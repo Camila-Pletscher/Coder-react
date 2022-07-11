@@ -1,18 +1,22 @@
 
-import "materialize-css/dist/css/materialize.min.css";
+import styles from './Detail.module.css'
 
 
-function Detail({id,nombre,categoria,image,precio}) {
+function Detail({id,nombre,categoria,image,precio, descripcion}) {
   
 
   return (
-    <div key={id}>
-      <span>{nombre}</span>
-      <span>Cat: {categoria}</span>
-      <span>
+    <div className={styles.contDetail} key={id}>
+      <div className={styles.contInfo}>
+        <div className={styles.title}>{nombre}</div>
+        <div className={styles.descrip}>{descripcion}</div>
+        <div className={styles.precio}>Inversión: ${precio}</div>
+      </div>
+      <div className={styles.contImage}>
         <img src={image} alt={nombre} />
-      </span>
-      <span>Precio: ${precio}</span>
+      </div>
+      
+      
     </div>
     
   );

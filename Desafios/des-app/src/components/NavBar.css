@@ -6,3 +6,13 @@
 nav {
     background-color: #B19BC4 !important;
 }
+
+.logo img {
+    width: 50px !important;
+}
+
+li:active {
+    background-color: #fff;
+    color:#B19BC4;
+    border-bottom: 5px solid #fff;
+}
