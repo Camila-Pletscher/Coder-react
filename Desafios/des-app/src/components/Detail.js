@@ -1,11 +1,12 @@
-
+import ItemCount from './ItemCount';
 import styles from './Detail.module.css'
 
 
-function Detail({id,nombre,categoria,image,precio, descripcion}) {
+function Detail({id,nombre,categoria,image,precio,descripcion,stock}) {
   
 
   return (
+    <>
     <div className={styles.contDetail} key={id}>
       <div className={styles.contInfo}>
         <div className={styles.title}>{nombre}</div>
@@ -14,11 +15,13 @@ function Detail({id,nombre,categoria,image,precio, descripcion}) {
       </div>
       <div className={styles.contImage}>
         <img src={image} alt={nombre} />
+        <ItemCount stock={stock} />
       </div>
       
       
     </div>
     
+    </>
   );
 }
 

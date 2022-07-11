@@ -6,7 +6,8 @@
         "id" : "1",
         "subtitulo" : "Este pack es ideal para emprendedores que quieran hacer de su marca algo mucho más profesional",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     },
 
     {
@@ -16,7 +17,8 @@
         "id" : "2",
         "subtitulo" : "Las tarjetas de presentación con una herramienta útil para dar tu información a posibles clientes",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
         
     },
 
@@ -27,7 +29,8 @@
         "id" : "3",
         "subtitulo" : "Diseño de bolsas de todo tipo personalizadas",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -37,7 +40,8 @@
         "id" : "4",
         "subtitulo" : "Diseño de folletos impresos o digitales",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -47,7 +51,8 @@
         "id" : 5,
         "subtitulo" : "Vouchers de regalo, súper prácticos",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     },
 
     {
@@ -57,7 +62,8 @@
         "id" : "6",
         "subtitulo" : "Stickers para ponerle un toque a tu emprendimiento",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -67,7 +73,8 @@
         "id" : "7",
         "subtitulo" : "Para ofrecer tus productos",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -77,7 +84,8 @@
         "id" : "8",
         "subtitulo" : "Para eventos",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -87,7 +95,8 @@
         "id" : "9",
         "subtitulo" : "Diseños personalizados con la temática que necesites",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -97,7 +106,8 @@
         "id" : "10",
         "subtitulo" : "El toque formal nunca está demás",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }, 
 
     {
@@ -107,7 +117,8 @@
         "id" : "11",
         "subtitulo" : "Ofrecé tus productos con precios y detalles",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     },
 
     {
@@ -117,7 +128,8 @@
         "id" : "12",
         "subtitulo" : "Reutiliza tus plantillas para redes sociales",
         "image" : "/assets/images/identidad-visual.png",
-        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa."
+        "descripcion" : "Es sabida la importancia que tiene lo visual en el mundo de hoy. Para destacarte es necesario pensar más allá de un simple logo. Una marca es mucho más y debe transmitir su esencia, sus valores y no solo ser “bonita”. Con estrategia e identidad tu marca será significativa y atraerá más y mejores clientes. En Studio.C nos especializamos en la creación de identidad de marca para que tu marca se destaque y sea coherente en lo que dice, hace y significa.",
+        "stock" : "5"
     }
 
 ]
