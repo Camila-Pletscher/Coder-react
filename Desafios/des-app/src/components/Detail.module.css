@@ -12,6 +12,23 @@
 
 }
 
+.contEndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.endButton {
+    background-color: #6db6aa;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+    border: 0;
+
+}
+
 .contImage img {
     width: 100%;
 }

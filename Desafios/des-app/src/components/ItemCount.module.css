@@ -1,0 +1,52 @@
+.contCount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contButton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    padding: 5px;
+}
+
+.circle button {
+    background-color: #fff;
+    border-radius: 30px;
+    border: 0;
+}
+
+.add {
+    display: flex;
+}
+
+.add button {
+    background-color: #B19BC4;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+    border: 0;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+}

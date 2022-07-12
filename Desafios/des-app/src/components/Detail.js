@@ -1,5 +1,7 @@
 import ItemCount from './ItemCount';
 import styles from './Detail.module.css'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Detail({id,nombre,categoria,image,precio,descripcion,stock}) {
@@ -15,9 +17,14 @@ function Detail({id,nombre,categoria,image,precio,descripcion,stock}) {
       </div>
       <div className={styles.contImage}>
         <img src={image} alt={nombre} />
+        
         <ItemCount stock={stock} />
+        <Link to="/carrito">
+        <div className={styles.contEndButton}>
+        <button className={styles.endButton}>Finalizar compra</button>
+        </div>
+        </Link>
       </div>
-      
       
     </div>
     
