@@ -2,8 +2,18 @@ import styles from "./Item.module.css";
 import "./Item.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 function Item({ id, nombre, categoria, image, precio }) {
+  const cart = useCart();
+
+  console.log(cart);
+
+  const addNewProduct = () => {
+    cart.addItem({id: {id}, name: {nombre}, price: {precio} })
+  }
+
+
   return (
     <div className={styles.card}>
       <Link to={`/item/${id}`}>
@@ -15,7 +25,11 @@ function Item({ id, nombre, categoria, image, precio }) {
       <div className={styles.cardContent}>
         <p>Precio: ${precio}</p>
       </div>
-      <div> <i className="small material-icons">add_shopping_cart</i></div>
+      <div> 
+        <button onClick={addNewProduct}>
+          <i className="small material-icons">add_shopping_cart</i>
+        </button>
+      </div>
     </div>
   );
 }
