@@ -1,6 +1,6 @@
 [
     {
-        "nombre": "Identidad Visual",
+        "product": "Identidad Visual",
         "categoria": "Identidad",
         "precio" : 15000,
         "id" : "1",
@@ -11,7 +11,7 @@
     },
 
     {
-        "nombre": "Tarjetas de presentación",
+        "product": "Tarjetas de presentación",
         "categoria": "Packaging",
         "precio" : 1500,
         "id" : "2",
@@ -23,7 +23,7 @@
     },
 
     {
-        "nombre": "Bolsas",
+        "product": "Bolsas",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "3",
@@ -34,7 +34,7 @@
     }, 
 
     {
-        "nombre": "Folletos",
+        "product": "Folletos",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "4",
@@ -45,7 +45,7 @@
     }, 
 
     {
-        "nombre": "Vouchers",
+        "product": "Vouchers",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : 5,
@@ -56,7 +56,7 @@
     },
 
     {
-        "nombre": "Stickers",
+        "product": "Stickers",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "6",
@@ -67,7 +67,7 @@
     }, 
 
     {
-        "nombre": "Menús",
+        "product": "Menús",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "7",
@@ -78,7 +78,7 @@
     }, 
 
     {
-        "nombre": "Entradas",
+        "product": "Entradas",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "8",
@@ -89,7 +89,7 @@
     }, 
 
     {
-        "nombre": "Certificados",
+        "product": "Certificados",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "9",
@@ -100,7 +100,7 @@
     }, 
 
     {
-        "nombre": "Hoja membretada",
+        "product": "Hoja membretada",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "10",
@@ -111,7 +111,7 @@
     }, 
 
     {
-        "nombre": "Catálogos",
+        "product": "Catálogos",
         "categoria": "Packaging",
         "precio" : 2500,
         "id" : "11",
@@ -122,7 +122,7 @@
     },
 
     {
-        "nombre": "Plantillas Canva",
+        "product": "Plantillas Canva",
         "categoria": "Redes",
         "precio" : 2500,
         "id" : "12",

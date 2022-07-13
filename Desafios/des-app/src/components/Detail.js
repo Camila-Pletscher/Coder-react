@@ -4,21 +4,21 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-function Detail({id,nombre,categoria,image,precio,descripcion,stock}) {
+function Detail({id,product,categoria,image,precio,descripcion,stock}) {
   
 
   return (
     <>
     <div className={styles.contDetail} key={id}>
       <div className={styles.contInfo}>
-        <div className={styles.title}>{nombre}</div>
+        <div className={styles.title}>{product}</div>
         <div className={styles.descrip}>{descripcion}</div>
         <div className={styles.precio}>Inversión: ${precio}</div>
       </div>
       <div className={styles.contImage}>
-        <img src={image} alt={nombre} />
+        <img src={image} alt={product} />
         
-        <ItemCount stock={stock} />
+        <ItemCount stock={stock} product={product} id={id} />
         <Link to="/carrito">
         <div className={styles.contEndButton}>
         <button className={styles.endButton}>Finalizar compra</button>
