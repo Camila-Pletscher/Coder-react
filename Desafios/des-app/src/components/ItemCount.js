@@ -7,6 +7,7 @@ import { CartContext } from '../context/CartContext';
 function ItemCount({stock, product, id}) {
     console.log(stock, product, id)
     const {addAmountToCart} = useContext(CartContext);
+    const {emptyCart} = useContext(CartContext);
 
     const [count, setCount] = useState(false);
 
@@ -52,6 +53,7 @@ function ItemCount({stock, product, id}) {
                 <div className={styles.add}>
                     <button onClick={() => addAmountToCart(product, amount, id)}>Agregar al carrito</button>
                 </div>
+                <button onClick={emptyCart}>vaciar</button>
             </div>
         )
         

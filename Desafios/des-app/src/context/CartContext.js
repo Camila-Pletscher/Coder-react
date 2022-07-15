@@ -78,10 +78,18 @@ export const CartProvider = ({ children }) => {
       }
     };
 
+    const emptyCart = () => {
+      setCartItems (() => {
+        localStorage.clear();
+        return [];
+      })
+      
+    }
+
     return (
       // En valor se pasa todo lo que queremos usar
       <CartContext.Provider
-        value={{ cartItems, addItemToCart, deleteItemToCart,addAmountToCart }}
+        value={{ cartItems, addItemToCart, deleteItemToCart,addAmountToCart,emptyCart}}
       >
         {/* se agrega el children recibido por props */}
         {children}
