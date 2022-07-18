@@ -2,28 +2,31 @@ import styles from "./Item.module.css";
 import "./Item.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
-import { CartContext, useCart } from "../context/CartContext";
 import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import ItemCount from "./ItemCount";
 
-function Item({ id, product, categoria, image, precio }) {
-  // Traemos la fx del context
-  const {addItemToCart} = useContext(CartContext)
+function Item(item) {
 
+  const {addItemToCart} = useContext(CartContext);
+
+  const onAdd = (amount) => {
+    addItemToCart(item, amount)
+  }
+ 
   return (
     <div className={styles.card}>
-      <Link to={`/item/${id}`}>
+      <Link to={`/item/${item.id}`}>
         <div className={styles.cardImage}>
-          <img src={image} alt={product} />
+          <img src={item.image} alt={item.name} />
         </div>
       </Link>
-      <div className={styles.cardTitle}>{product}</div>
+      <div className={styles.cardTitle}>{item.name}</div>
       <div className={styles.cardContent}>
-        <p>Precio: ${precio}</p>
+        <p>Precio: ${item.precio}</p>
       </div>
-      <div> 
-        <button onClick={() => addItemToCart(product)}>
-          <i className="small material-icons">add_shopping_cart</i>
-        </button>
+      <div>
+      <ItemCount item={item} onAdd={onAdd} />
       </div>
     </div>
   );

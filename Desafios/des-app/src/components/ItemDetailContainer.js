@@ -10,8 +10,6 @@ function ItemDetailContainer() {
   const [isLoading, setIsLoading] = useState(true);
   const {iditem} = useParams();
 
-  console.log(iditem);
-
   useEffect(() => {
     setIsLoading(true);
     setTimeout(

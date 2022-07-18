@@ -22,7 +22,6 @@ function ItemListContainer() {
             .finally (() => setIsLoading(false))
         },2000)
     }, [idcategoria])
-    console.log(items)
     
 
     return (

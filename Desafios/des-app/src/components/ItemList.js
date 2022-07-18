@@ -6,7 +6,7 @@ import Item from './Item';
 
 
 function ItemList({items} ) {
-    console.log(items)
+
 
     
     return (
@@ -16,6 +16,7 @@ function ItemList({items} ) {
                     {...item} key={item.id}
                 />
             ))}
+            
         </div>
         
         

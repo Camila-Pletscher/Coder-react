@@ -4,38 +4,25 @@ import 'materialize-css/dist/css/materialize.min.css';
 import Swal from 'sweetalert2';
 import { CartContext } from '../context/CartContext';
 
-function ItemCount({stock, product, id}) {
-    console.log(stock, product, id)
-    const {addAmountToCart} = useContext(CartContext);
-    const {emptyCart} = useContext(CartContext);
+function ItemCount({item, onAdd}) {
 
     const [count, setCount] = useState(false);
 
-    const [ amount, setAmount ] = useState(0);
+    const [amount, setAmount ] = useState(1);
+
     const sumar = () => {
-        if(amount < stock) {
+
             setAmount (amount + 1)
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Lo sentimos',
-                text: 'No hay más stock disponible',
-                timer: 2000
-              })
-        }
         
     }
 
     const restar = () => {
-        if(amount > 0){
+        if(amount > 1){
             setAmount (amount - 1)
         }
         
     }
 
-    function borrar(){
-        setCount(true);
-    }
     return (
         count ? (<p>Cantidad seleccionada: {amount}</p>) : (
             <div className={styles.contCount}>
@@ -51,9 +38,9 @@ function ItemCount({stock, product, id}) {
                     </div>
                 </div>
                 <div className={styles.add}>
-                    <button onClick={() => addAmountToCart(product, amount, id)}>Agregar al carrito</button>
+                    <button onClick={() => onAdd(amount)}>Agregar al carrito</button>
                 </div>
-                <button onClick={emptyCart}>vaciar</button>
+                
             </div>
         )
         
