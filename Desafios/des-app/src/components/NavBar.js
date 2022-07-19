@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
 import NavLogo from './NavLogo';
+import { NavDropdown } from 'react-bootstrap';
 
 
 function NavBar() {
@@ -26,13 +27,16 @@ function NavBar() {
           <Nav className="me-auto">
           <Nav.Link href="/" >Welcome</Nav.Link>
             <Nav.Link href="/home" >Home</Nav.Link>
+            <NavDropdown title="Servicios" id="basic-nav-dropdown">
             {
               categories.map((cat) =>{
                 return (
-                  <Nav.Link activeClassName='active' key={cat.id} href={cat.address}>{cat.text}</Nav.Link>
+                  <NavDropdown.Item activeClassName='active' key={cat.id} href={cat.address}>{cat.text}</NavDropdown.Item>
                 )
               })
             }
+            <NavDropdown.Item href="/services">Ver todo</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
