@@ -1,0 +1,43 @@
+.contDelete {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.delete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgb(164, 75, 75);
+    width: 50%;
+}
+
+.icon {
+    border: 0;
+    color: #fff;
+    height: 100%;
+
+    
+}
+
+.vaciar {
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    height: 100%;
+}
+
+
+.delete div i {
+    color: #fff !important;
+}

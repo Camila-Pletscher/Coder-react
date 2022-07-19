@@ -1,4 +1,18 @@
 .link {
-    color: black !important;
+    color: #B19BC4 !important;
+    text-decoration: none !important;
+}
+
+.navbar-nav {
+    background-color: #f8f9fa;
+    padding-left: 10px !important;
+}
+
+i.material-icons {
+    line-height: 0px !important;
+    height: auto !important;
+}
+
+nav a {
     text-decoration: none !important;
 }

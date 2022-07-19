@@ -30,11 +30,12 @@
 
 .add {
     display: flex;
+    font-size: 1em;
 }
 
 .add button {
     background-color: #B19BC4;
-    border-radius: 50px;
+    border-radius: 10px;
     text-align: center;
     color: #fff;
     padding: 1em;

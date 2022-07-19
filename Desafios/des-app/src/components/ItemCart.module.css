@@ -1,0 +1,53 @@
+.contProduct {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: #B19BC4 1px solid;
+}
+
+.contImage {
+    padding: 2em;
+    
+}
+
+.contImage img {
+    width: 200px;
+    margin: auto;
+}
+
+.delete {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 28, 28);
+    margin-left: 2em;
+}
+
+.delete div {
+    
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.3em;
+    
+}
+.delete div i {
+    color: #fff !important;
+}
+
+.contInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}

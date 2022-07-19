@@ -2,14 +2,6 @@
     display: flex;
 }
 
-.cart-icon {
-    display: flex;
-}
-
-.cart-number {
-    display: flex;
-}
-
-.carti {
-    line-height: 0 !important;
+.count {
+    color: aquamarine !important;
 }

@@ -13,7 +13,6 @@ function App() {
     <CartProvider>
       <BrowserRouter>
       <NavBar></NavBar>
-
       <Routes>
         <Route path="/" element={<ItemListContainer greeting={'HOME'}/>}/>
         <Route path="/home" element={<ItemListContainer greeting={'HOME'}/>}/>

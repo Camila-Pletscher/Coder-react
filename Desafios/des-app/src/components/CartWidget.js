@@ -14,11 +14,10 @@ function CartWidget() {
     return (
         <Link to="/cart">
         <div className='cart'>
-        <div className='cart-icon'>
-            <i className="large material-icons carti">local_grocery_store</i>
-        </div>
         
-        <div className='cart-number'>{cartItems.length}</div>
+            <i className="small material-icons carti">local_grocery_store {cartItems.length}</i>
+    
+       
         </div>
         </Link>
     );

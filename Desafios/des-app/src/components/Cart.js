@@ -1,3 +1,4 @@
+import styles from './Cart.module.css';
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
@@ -16,7 +17,16 @@ function Cart () {
                 />
             ))}
         </div>
-        <button onClick={deleteCart}>vaciar</button>
+        <div className={styles.contDelete}>
+            <div className={styles.delete} onClick={deleteCart}>
+                    <div className={styles.icon}>
+                        <i class="material-icons">delete_forever</i>
+                    </div>
+                    <div className={styles.vaciar}>
+                        Vaciar
+                    </div>
+            </div>
+        </div>
         </>
     )
 }

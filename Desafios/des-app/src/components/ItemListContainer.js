@@ -3,6 +3,7 @@ import './ItemListContainer.css';
 import ItemList from './ItemList';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Banner from './Banner';
 
 
 
@@ -30,7 +31,7 @@ function ItemListContainer() {
                 <div className="indeterminate"></div>
             </div>
         ) :
-        (<div className="contItemList"><ItemList items={items}/></div>)
+        (<><Banner></Banner><div className="contItemList"><ItemList items={items}/></div></>)
     );
   }
   
