@@ -1,11 +1,6 @@
-.link {
-    color: #B19BC4 !important;
-    text-decoration: none !important;
-}
 
 .navbar-nav {
     background-color: #f8f9fa;
-    padding-left: 10px !important;
 }
 
 i.material-icons {
@@ -15,4 +10,9 @@ i.material-icons {
 
 nav a {
     text-decoration: none !important;
+}
+
+.nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }

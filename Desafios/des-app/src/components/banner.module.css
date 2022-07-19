@@ -1,7 +1,6 @@
 .banner {
     width: 100%;
+    background-color: #B19BC4;
+    height: 200px;
 }
 
-.banner img {
-    width: 100%;
-}

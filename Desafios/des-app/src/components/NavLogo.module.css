@@ -1,0 +1,14 @@
+.contLogo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #B19BC4;
+}
+
+.contLogo img {
+    width: 50px;
+}

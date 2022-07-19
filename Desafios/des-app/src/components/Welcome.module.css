@@ -1,0 +1,55 @@
+.contWelcome {
+    background-color: #B19BC4;
+}
+
+.contLogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contLogo img {
+    width: 20%;
+}
+
+.contSaludo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    color: #fff;
+}
+
+.saludo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+.contLinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1em 3em;
+    border-radius: 1em;
+    margin: 1em 0em;
+}
+
