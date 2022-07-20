@@ -6,6 +6,8 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
+import WithNav from './components/WithNav';
+import WithOutNav from './components/WithOutNav';
 import { CartProvider } from './context/CartContext';
 
 
@@ -15,14 +17,18 @@ function App() {
     <CartProvider>
       <BrowserRouter>
       
-      <NavBar></NavBar>
+      
       <Routes>
-        
-      <Route path="/" element={<Welcome/>}/>
+      <Route element={<WithOutNav/>}>
+        <Route path="/" element={<Welcome/>}/>
+      </Route>
+
+      <Route element={<WithNav/>}>
         <Route path="/services" element={<ItemListContainer greeting={'HOME'}/>}/>
         <Route path="/categoria/:idcategoria" element={<ItemListContainer greeting={'HOME'}/>}/>
         <Route path="/item/:iditem" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />}/>
+      </Route>
         
       </Routes>
       <Footer></Footer>
