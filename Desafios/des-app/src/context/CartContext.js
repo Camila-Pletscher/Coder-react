@@ -7,12 +7,21 @@ export const CartProvider = ({ children }) => {
   
 
   const [cartItems, setCartItems] = useState([]);
+
+  // const [total, setTotal] = useState(0);
+
+  const total = cartItems.reduce((acc, item) => {
+    return acc = acc + item.precio;
+  }, 0);
+
+  console.log(total);
+  
   
 
   
 
   //Agregar producto al carrito con la cantidad del itemCount
-  const addItemToCart = (item, amount, setCount) => {
+  const addItemToCart = (item, amount) => {
     
     
     if(cartItems.some(el => el.id === item.id)){

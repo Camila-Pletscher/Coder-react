@@ -6,12 +6,18 @@ import FinCompra from "./FinCompra";
 
 function Cart() {
   const { deleteCart } = useContext(CartContext);
-  const { cartItems, setCartItems } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
   const [vaciar, setVaciar] = useState(false);
+
+  if (cartItems.length < 1) {
+    console.log(cartItems.length);
+  }
+
+  
 
   return (
     
-      vaciar ? (<p>No hay productos en el carrito</p>) : (<div>
+    vaciar || cartItems.length < 1 ? (<p>No hay productos en el carrito</p>) : (<div>
         {cartItems?.map((item) => (
           <ItemCart {...item} key={item.id} />
         ))}
