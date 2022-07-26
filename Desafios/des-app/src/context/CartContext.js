@@ -4,8 +4,12 @@ export const CartContext = createContext(null);
 
 export const CartProvider = ({ children }) => {
 
+  
 
   const [cartItems, setCartItems] = useState([]);
+  
+
+  
 
   //Agregar producto al carrito con la cantidad del itemCount
   const addItemToCart = (item, amount, setCount) => {
@@ -17,6 +21,7 @@ export const CartProvider = ({ children }) => {
 
       let product = cartItems[index];
       product.amount = product.amount + amount;
+      product.subprecio = product.precio * product.amount
 
       const newCart = [...cartItems];
       newCart.splice(index, 1, product);
@@ -26,6 +31,7 @@ export const CartProvider = ({ children }) => {
 
     } else {
       let product = {...item, amount};
+      product.subprecio = product.precio * product.amount
       setCartItems([...cartItems, product ])
     }
     
@@ -41,7 +47,13 @@ export const CartProvider = ({ children }) => {
     let index = newCart.findIndex(el => el.id === id);
     newCart.splice(index, 1);
 
+    console.log(newCart);
+
     setCartItems([...newCart])
+
+    if (newCart === []) {
+      return
+    }
   }
 
   return (

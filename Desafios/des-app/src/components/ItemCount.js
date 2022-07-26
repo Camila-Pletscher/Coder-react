@@ -38,7 +38,7 @@ function ItemCount({item, onAdd}) {
                     </div>
                 </div>
                 <div className={styles.add}>
-                    <button onClick={() => onAdd(amount)}>Agregar al carrito</button>
+                    <button onClick={() => onAdd(amount, setCount)}>Agregar al carrito</button>
                 </div>
                 
             </div>

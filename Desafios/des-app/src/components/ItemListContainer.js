@@ -32,8 +32,8 @@ function ItemListContainer() {
         setTimeout(() => {
             const db = getFirestore();
 
-        const q = query (collection(db, "services"), where ("categoria", "==", idcategoria))
-
+            const q = query (collection(db, "services"), where ("categoria", "==", idcategoria))
+            
         getDocs(q).then((snapshot) => {
             
                 setItems(snapshot.docs.map((doc) => doc.data()))

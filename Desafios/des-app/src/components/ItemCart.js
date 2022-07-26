@@ -3,8 +3,10 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
 function ItemCart (item) {
-    
+
     const {deleteItemToCart} = useContext(CartContext);
+
+
     return(
         <>
        <div className={styles.contProduct}>
@@ -19,7 +21,7 @@ function ItemCart (item) {
             <p>Cantidad: {item.amount}</p>
         </div>
         <div className={styles.precio}>
-            <p>Precio: ${item.precio}</p>
+            <p>Subtotal: ${item.subprecio}</p>
         </div>
         </div>
         
