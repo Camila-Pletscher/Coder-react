@@ -1,4 +1,4 @@
-import "./CartWidget.css";
+import styles from "./CartWidget.module.css";
 
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
@@ -17,13 +17,15 @@ function CartWidget() {
   }, [cartItems]);
 
   return (
-    <div>
+    <div className={styles.contCart}>
       <Link to="/cart">
-        <div className="cart">
+        <div className={styles.cart}>
           <i className="small material-icons carti">local_grocery_store </i>
         </div>
       </Link>
-      <div>{productsLength}</div>
+      <div className={styles.length}>
+        <p>{productsLength}</p>
+        </div>
     </div>
   );
 }

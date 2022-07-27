@@ -1,0 +1,28 @@
+.cart {
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.cart i {
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+.length p {
+    font-size: 0.6em;
+    color: #B19BC4;
+    margin: 0;
+    padding: 0;
+}
+
+.contCart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
