@@ -22,11 +22,7 @@ function Detail(service) {
         </div>
         <div className={styles.contImage}>
           <img src={service.image} alt={service.name} />
-          <Link to="/cart">
-            <div className={styles.contEndButton}>
-              <button className={styles.endButton}>Ver carrito</button>
-            </div>
-          </Link>
+          
           <div>
             <ItemCount item={service} onAdd={onAdd} />
           </div>

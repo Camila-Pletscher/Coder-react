@@ -47,6 +47,31 @@ export const CartProvider = ({children}) => {
     }
   }
 
+  //FX PARA AGREGAR DESDE DETAIL 
+
+  const addAmountToCart = (product, amount, setCount) => {
+    //Busco si el producto esta en el carrito y lo guardo en incart
+    const inCart = cartItems.find(
+      (productInCart) => productInCart.id === product.id
+    );
+
+    setCount(true)
+      //Si esta en el carrito 
+    if(inCart) {
+      setCartItems(
+        cartItems.map((productInCart) => {
+          if(productInCart.id === product.id) {
+            return { ...inCart, amount: inCart.amount + amount};
+          } else return productInCart; // doble validacion?
+        })
+      )
+      //Si no esta en el carrito 
+    } else {
+      setCartItems([...cartItems, {...product, amount: amount}])
+    }
+
+  }
+
   //FX PARA ELIMINAR PRODUCTO DEL CARRITO 
 
   const deleteItemToCart = (product) => {
@@ -79,7 +104,7 @@ export const CartProvider = ({children}) => {
   }
 
   return (
-    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart}}>
+    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart, addAmountToCart}}>
       {children}
     </CartContext.Provider>
   )

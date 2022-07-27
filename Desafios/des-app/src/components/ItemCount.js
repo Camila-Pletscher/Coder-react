@@ -3,8 +3,11 @@ import styles from './ItemCount.module.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import Swal from 'sweetalert2';
 import { CartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
-function ItemCount({item, onAdd}) {
+function ItemCount({item}) {
+
+    const {addAmountToCart} = useContext(CartContext);
 
     const [count, setCount] = useState(false);
 
@@ -24,7 +27,13 @@ function ItemCount({item, onAdd}) {
     }
 
     return (
-        count ? (<p>Cantidad seleccionada: {amount}</p>) : (
+        count ? (<><p>Cantidad seleccionada: {amount}</p>
+        <Link to="/cart">
+            <div className={styles.contEndButton}>
+              <button className={styles.endButton}>Ver carrito</button>
+            </div>
+          </Link>
+          </> ) : (
             <div className={styles.contCount}>
                 <div className={styles.contButton}>
                     <div className={styles.circle}>
@@ -38,7 +47,7 @@ function ItemCount({item, onAdd}) {
                     </div>
                 </div>
                 <div className={styles.add}>
-                    <button onClick={() => onAdd(amount, setCount)}>Agregar al carrito</button>
+                    <button onClick={() => addAmountToCart( item, amount, setCount)}>Agregar al carrito</button>
                 </div>
                 
             </div>

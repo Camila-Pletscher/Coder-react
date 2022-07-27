@@ -2,55 +2,39 @@ import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
 
-
 function Cart() {
-  const [cartOpen, setCartOpen] = useState(false);
   const [productsLength, setProductsLength] = useState(0);
 
-  const {cartItems, emptyCart} = useContext(CartContext);
+  const { cartItems, emptyCart } = useContext(CartContext);
 
   useEffect(() => {
     setProductsLength(
       cartItems.reduce((previous, current) => previous + current.amount, 0)
-      
-    )
-    
+    );
+  }, [cartItems]);
 
-  }, [cartItems])
-
-  console.log(productsLength)
-
-  const total = cartItems.reduce((previous, current) => previous + current.amount * current.precio, 0)
+  const total = cartItems.reduce(
+    (previous, current) => previous + current.amount * current.precio,
+    0
+  );
 
   return (
     <div>
-      <div onClick={() => {
-         setCartOpen(!cartOpen);
-      }}>
-        <div>
-        {!cartOpen ? (
-          <p>Carrito cerrado</p>
-        ) : (
-          <p>Carrito abierto</p>
-        )}
-        </div>
-        {!cartOpen && (
-          <p>{productsLength}</p>
-        )}
-      </div>
-      {cartItems && cartOpen && (
+      {cartItems && (
         <div>
           <h2>Tu carrito</h2>
 
-          {cartItems.length === 0 ? <p>Tu carrito esta vacio</p> : (
+          {cartItems.length === 0 ? (
+            <p>Tu carrito esta vacio</p>
+          ) : (
             <>
-            <div>
-              {cartItems?.map((item) => (
-         <ItemCart {...item} key={item.id} />
-         
-       ))}
-            </div>
-            <button onClick={emptyCart}>Vaciar </button>
+              <div>
+                {cartItems?.map((item) => (
+                  <ItemCart {...item} key={item.id} />
+                ))}
+              </div>
+              <div>Cantidad de items: {productsLength}</div>
+              <button onClick={emptyCart}>Vaciar </button>
             </>
           )}
 
@@ -58,20 +42,10 @@ function Cart() {
         </div>
       )}
     </div>
-  )
-  
+  );
 }
 
-
-
 export default Cart;
-
-
-
-
-
-
-
 
 // import styles from "./Cart.module.css";
 // import { useContext, useEffect, useState } from "react";
@@ -88,10 +62,8 @@ export default Cart;
 //     console.log(cartItems.length);
 //   }
 
-  
-
 //   return (
-    
+
 //     vaciar || cartItems.length < 1 ? (<p>No hay productos en el carrito</p>) : (<div>
 //         {cartItems?.map((item) => (
 //           <ItemCart {...item} key={item.id} />
@@ -102,14 +74,11 @@ export default Cart;
 //             <i class="material-icons">delete_forever</i>
 //           </div>
 //           <div className={styles.vaciar}>Vaciar</div>
-//         </div> 
+//         </div>
 //       </div>
 //       <FinCompra/>
 //       </div>)
 
-      
-      
-    
 //   );
 // }
 
