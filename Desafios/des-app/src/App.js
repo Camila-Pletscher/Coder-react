@@ -4,7 +4,6 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
 import WithNav from './components/WithNav';
 import WithOutNav from './components/WithOutNav';

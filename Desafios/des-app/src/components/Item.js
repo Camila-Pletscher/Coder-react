@@ -2,10 +2,12 @@ import styles from "./Item.module.css";
 import "./Item.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 function Item(item) {
 
-  
+  const {addItemToCart} = useContext(CartContext);
 
   
  
@@ -20,7 +22,11 @@ function Item(item) {
       <div className={styles.cardContent}>
         <p>Precio: ${item.precio}</p>
       </div>
-      
+      <div>
+        <button onClick={() => addItemToCart(item)}>
+          Agregar al carrito
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,75 +1,87 @@
 import { createContext, useEffect, useState } from "react";
 
-export const CartContext = createContext(null);
+// Creamos el context sin pasarle ningun parametro
+export const CartContext = createContext();
 
-export const CartProvider = ({ children }) => {
-
-  
-
-  const [cartItems, setCartItems] = useState([]);
-
-  // const [total, setTotal] = useState(0);
-
-  const total = cartItems.reduce((acc, item) => {
-    return acc = acc + item.precio;
-  }, 0);
-
-  console.log(total);
-  
-  
-
-  
-
-  //Agregar producto al carrito con la cantidad del itemCount
-  const addItemToCart = (item, amount) => {
-    
-    
-    if(cartItems.some(el => el.id === item.id)){
-      
-      let index = cartItems.findIndex(el => el.id === item.id)
-
-      let product = cartItems[index];
-      product.amount = product.amount + amount;
-      product.subprecio = product.precio * product.amount
-
-      const newCart = [...cartItems];
-      newCart.splice(index, 1, product);
-
-      setCartItems([...newCart]);
-
-
-    } else {
-      let product = {...item, amount};
-      product.subprecio = product.precio * product.amount
-      setCartItems([...cartItems, product ])
+//Creamos el cartprovider con el children que pide react 
+export const CartProvider = ({children}) => {
+  //Creamos un estado para el carrito --> en el usestate le pasamos una arrow fx con un try catch para guardarlos productos en el local storage
+  const [cartItems, setCartItems] = useState(() => {
+    try {
+      //Guardamos en el local storage con el nombre cartProducts
+      const productosEnLocalStorage = localStorage.getItem('cartProducts')
+      //Con esta linea validaos si hay algo en el local storage, si hay lo parseamos para pasarlo de string a objeto y si no hay que devuelva array vacio 
+      return productosEnLocalStorage ? JSON.parse(productosEnLocalStorage) : [];
+    } catch (error) {
+      //Si hay algun error que devuelva array vacio
+      return [];
     }
-    
+  });
 
-  };
+  //Con dependecia del carrito, es decir cada vez que se modifique el carrito se renderiza y se cargan los productos al local storage pasados a string que es lo que recibe el json 
+  useEffect(() => {
+    localStorage.setItem('cartProducts', JSON.stringify(cartItems));
+    console.log(cartItems)
+  }, [cartItems])
 
-  const deleteCart = () => {
-    setCartItems([]);
+  //FX PARA AGREGAR PRODUCTO AL CARRITO 
+
+  const addItemToCart = (product) => {
+    //Busco si el producto esta en el carrito y lo guardo en incart
+    const inCart = cartItems.find(
+      (productInCart) => productInCart.id === product.id
+    );
+
+    //Si esta en el carrito 
+    if(inCart) {
+      setCartItems(
+        cartItems.map((productInCart) => {
+          if(productInCart.id === product.id) {
+            return { ...inCart, amount: inCart.amount + 1};
+          } else return productInCart; // doble validacion?
+        })
+      )
+      //Si no esta en el carrito 
+    } else {
+      setCartItems([...cartItems, {...product, amount: 1}])
+    }
   }
 
-  const deleteItemToCart = (id) => {
-    const newCart = [...cartItems];
-    let index = newCart.findIndex(el => el.id === id);
-    newCart.splice(index, 1);
+  //FX PARA ELIMINAR PRODUCTO DEL CARRITO 
 
-    console.log(newCart);
+  const deleteItemToCart = (product) => {
+    //Busco si el producto esta en el carrito y lo guardo en incart
+    const inCart = cartItems.find(
+      (productInCart) => productInCart.id === product.id
+    );
 
-    setCartItems([...newCart])
-
-    if (newCart === []) {
-      return
+    //Si la cantidad del producto encontrado es 1 vamos a dejar en el carrito todos los productos que sean distintos a ese producto
+    if(inCart.amount === 1) {
+      setCartItems(
+        cartItems.filter(productInCart => productInCart.id !== product.id)
+      )
+      //si la cantidad no es 1 le resto 1 a la cantidad 
+    } else {
+      setCartItems(
+        cartItems.map((productInCart) => {
+        if(productInCart.id === product.id) {
+          return {...inCart, amount: inCart.amount - 1}
+        } else return productInCart;
+      }))
     }
+  }
+
+  //FX PARA VACIAR EL CARRITO 
+
+  const emptyCart = () => {
+    setCartItems([]);
+    localStorage.clear('cartProducts');
   }
 
   return (
-    // En valor se pasa todo lo que queremos usar
-    <CartContext.Provider value={{ cartItems, addItemToCart, deleteCart, deleteItemToCart}}>
-      {/* se agrega el children recibido por props */}
+    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart}}>
       {children}
     </CartContext.Provider>
-  );
-};
+  )
+  
+}
