@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 
 
-function FinCompra(){
+function FinCompra({total}){
 
   const {cartItems} = useContext(CartContext);
 
@@ -19,7 +19,7 @@ function FinCompra(){
     const order = {
           buyer: { name: name, phone: phone, email: email },
           items: [{...cartItems}],
-          total: 100, 
+          total: {total}, 
     }
 
     const db = getFirestore();
@@ -51,7 +51,7 @@ function FinCompra(){
           <label>Phone</label>
           <input type="number" onChange={(e)=>setCell(e.target.value)}  value={phone} />
 
-          <button onClick={sendOrder}>Finalizar compra</button>
+          <button onClick={sendOrder}>Enviar</button>
         </form>
         
       )

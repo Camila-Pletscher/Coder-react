@@ -10,6 +10,8 @@ function Cart() {
 
   const { cartItems, emptyCart } = useContext(CartContext);
 
+  const [form, setForm] = useState(false);
+
   useEffect(() => {
     setProductsLength(
       cartItems.reduce((previous, current) => previous + current.amount, 0)
@@ -36,11 +38,16 @@ function Cart() {
                   <ItemCart {...item} key={item.id} />
                 ))}
               </div>
+              
               <div>Cantidad de items: {productsLength}</div>
               <button onClick={emptyCart}>Vaciar </button>
               <Link to="/finalizar">
-              <FinCompra/>
+              <button onClick={() => {setForm(true)}}>Finalizar compra</button>
               </Link>
+              {form && (
+              <FinCompra total={total}/>
+              )}
+              
             </>
           )}
 
