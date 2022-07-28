@@ -2,6 +2,7 @@ import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
+
 function FinCompra(){
 
   const {cartItems} = useContext(CartContext);

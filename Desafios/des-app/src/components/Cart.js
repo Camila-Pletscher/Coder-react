@@ -1,6 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
+import FinCompra from "./FinCompra";
+import {  Link } from 'react-router-dom';
+
 
 function Cart() {
   const [productsLength, setProductsLength] = useState(0);
@@ -35,6 +38,9 @@ function Cart() {
               </div>
               <div>Cantidad de items: {productsLength}</div>
               <button onClick={emptyCart}>Vaciar </button>
+              <Link to="/finalizar">
+              <FinCompra/>
+              </Link>
             </>
           )}
 

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Cart from './components/Cart';
+import FinCompra from './components/FinCompra';
 import Footer from './components/Footer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/categoria/:idcategoria" element={<ItemListContainer greeting={'HOME'}/>}/>
         <Route path="/item/:iditem" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />}/>
+        <Route path="/finalizar" element={<FinCompra />}/>
       </Route>
         
       </Routes>
