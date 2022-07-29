@@ -1,11 +1,12 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import Swal from "sweetalert2";
 
 
-function FinCompra({total}){
+function FinCompra(){
 
-  const {cartItems} = useContext(CartContext);
+  const {cartItems, total} = useContext(CartContext);
 
   const [name, setName] = useState('');
 
@@ -26,7 +27,12 @@ function FinCompra({total}){
 
     const ordersCollection = collection(db, "orders")
 
-    addDoc(ordersCollection, order).then(({id}) =>console.log(id))
+    addDoc(ordersCollection, order).then(({id}) => {
+      Swal.fire(`Orden de compra: ${id}`)
+  })
+
+    
+    
   }
 
   const cashOutSubmit = (e) => {
@@ -51,7 +57,8 @@ function FinCompra({total}){
           <label>Phone</label>
           <input type="number" onChange={(e)=>setCell(e.target.value)}  value={phone} />
 
-          <button onClick={sendOrder}>Enviar</button>
+          <button>Enviar</button>
+          
         </form>
         
       )

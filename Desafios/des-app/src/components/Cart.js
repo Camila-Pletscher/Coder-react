@@ -8,9 +8,10 @@ import {  Link } from 'react-router-dom';
 function Cart() {
   const [productsLength, setProductsLength] = useState(0);
 
-  const { cartItems, emptyCart } = useContext(CartContext);
+  const { cartItems, emptyCart, total } = useContext(CartContext);
 
   const [form, setForm] = useState(false);
+
 
   useEffect(() => {
     setProductsLength(
@@ -18,10 +19,10 @@ function Cart() {
     );
   }, [cartItems]);
 
-  const total = cartItems.reduce(
-    (previous, current) => previous + current.amount * current.precio,
-    0
-  );
+  // const total = cartItems.reduce(
+  //   (previous, current) => previous + current.amount * current.precio,
+  //   0
+  // );
 
   return (
     <div>
@@ -38,7 +39,7 @@ function Cart() {
                   <ItemCart {...item} key={item.id} />
                 ))}
               </div>
-              
+
               <div>Cantidad de items: {productsLength}</div>
               <button onClick={emptyCart}>Vaciar </button>
               <Link to="/finalizar">
@@ -47,7 +48,7 @@ function Cart() {
               {form && (
               <FinCompra total={total}/>
               )}
-              
+
             </>
           )}
 

@@ -103,8 +103,13 @@ export const CartProvider = ({children}) => {
     localStorage.clear('cartProducts');
   }
 
+  const total = cartItems.reduce(
+    (previous, current) => previous + current.amount * current.precio,
+    0
+  );
+
   return (
-    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart, addAmountToCart}}>
+    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart, addAmountToCart,total}}>
       {children}
     </CartContext.Provider>
   )
