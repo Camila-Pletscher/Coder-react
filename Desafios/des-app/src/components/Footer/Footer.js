@@ -1,8 +1,8 @@
 import styles from './Footer.module.css';
 
-import ig from '../logo-ig.png'
-import beh from '../logo-beh.png'
-import wpp from '../logo-wpp.png'
+import ig from '../../logo-ig.png'
+import beh from '../../logo-beh.png'
+import wpp from '../../logo-wpp.png'
 
 import 'materialize-css/dist/css/materialize.min.css';
 

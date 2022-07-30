@@ -3,7 +3,7 @@ import "./ItemListContainer.css";
 import ItemList from "./ItemList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Banner from "./Banner";
+import Banner from "../Home/Banner";
 
 import {
   collection,

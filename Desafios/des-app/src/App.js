@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Cart from './components/Cart';
-import FinCompra from './components/FinCompra';
-import Footer from './components/Footer';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemListContainer from './components/ItemListContainer';
-import Welcome from './components/Welcome';
-import WithNav from './components/WithNav';
-import WithOutNav from './components/WithOutNav';
+import Cart from './components/Cart/Cart';
+import WithNav from './components/NavBar/WithNav';
+import WithOutNav from './components/NavBar/WithOutNav';
+import Welcome from './components/Welcome/Welcome';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Footer from './components/Footer/Footer';
+import FinCompra from './components/Cart/FinCompra';
+
 import { CartProvider } from './context/CartContext';
 
 

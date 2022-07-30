@@ -1,6 +1,6 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { useContext, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import Swal from "sweetalert2";
 
 

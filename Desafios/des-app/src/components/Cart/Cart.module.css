@@ -1,0 +1,31 @@
+.contTitleCart {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.contCartIcon {
+    display: flex;
+}
+
+.titleCart {
+    display: flex;
+}
+
+.titleCart p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contProducts {
+    display: flex;
+    border: solid #000 1px;
+    border-radius: 12px;
+}

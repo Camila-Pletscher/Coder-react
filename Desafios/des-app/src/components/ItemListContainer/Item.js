@@ -3,7 +3,7 @@ import "./Item.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function Item(item) {
 

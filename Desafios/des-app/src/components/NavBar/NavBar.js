@@ -1,11 +1,10 @@
 import './NavBar.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import CartWidget from './CartWidget';
+import CartWidget from '../Cart/CartWidget';
 import NavLogo from './NavLogo';
 import { NavDropdown } from 'react-bootstrap';
 

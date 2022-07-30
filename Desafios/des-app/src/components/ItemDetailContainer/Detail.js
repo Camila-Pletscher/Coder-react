@@ -2,7 +2,7 @@ import styles from "./Detail.module.css";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import { useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function Detail(service) {
   const { addItemToCart } = useContext(CartContext);

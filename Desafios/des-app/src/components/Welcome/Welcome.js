@@ -1,7 +1,7 @@
 import styles from './Welcome.module.css';
-
-import logo from '../logo-pyc.png'
+import logo from '../../logo-pyc.png';
 import { Link } from 'react-router-dom';
+
 function Welcome() {
     return(
         <div className={styles.contWelcome}>

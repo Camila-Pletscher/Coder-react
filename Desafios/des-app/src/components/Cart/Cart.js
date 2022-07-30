@@ -1,17 +1,14 @@
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
+import { Link } from "react-router-dom";
+import "materialize-css/dist/css/materialize.min.css";
 import ItemCart from "./ItemCart";
-import FinCompra from "./FinCompra";
-import {  Link } from 'react-router-dom';
-
+import styles from "./Cart.module.css";
 
 function Cart() {
   const [productsLength, setProductsLength] = useState(0);
 
   const { cartItems, emptyCart, total } = useContext(CartContext);
-
-  const [form, setForm] = useState(false);
-
 
   useEffect(() => {
     setProductsLength(
@@ -28,31 +25,44 @@ function Cart() {
     <div>
       {cartItems && (
         <div>
-          <h2>Tu carrito</h2>
+          <div className={styles.contTitleCart}>
+            <div className={styles.contCartIcon}>
+              <i className="small material-icons carti">local_grocery_store </i>
+            </div>
+            <div className={styles.titleCart}>
+              <p>Carrito de compras</p>
+            </div>
+          </div>
 
           {cartItems.length === 0 ? (
             <p>Tu carrito esta vacio</p>
           ) : (
-            <>
+            <div className={styles.contProducts}>
               <div>
-                {cartItems?.map((item) => (
-                  <ItemCart {...item} key={item.id} />
-                ))}
+                <div>
+                  {cartItems?.map((item) => (
+                    <ItemCart {...item} key={item.id} />
+                  ))}
+                </div>
+
+                <div>
+                  <p>
+                    Cantidad de items: {productsLength}
+                  </p>
+                </div>
+                <div>
+                <button onClick={emptyCart}>Vaciar</button>
+                </div>
+                
               </div>
-
-              <div>Cantidad de items: {productsLength}</div>
-              <button onClick={emptyCart}>Vaciar </button>
-              <Link to="/finalizar">
-              <button onClick={() => {setForm(true)}}>Finalizar compra</button>
-              </Link>
-              {form && (
-              <FinCompra total={total}/>
-              )}
-
-            </>
+              <div>
+                <p>Total: {total}</p>
+                <Link to="/finalizar">
+                  <button>Finalizar compra</button>
+                </Link>
+              </div>
+            </div>
           )}
-
-          <h2>Total: {total}</h2>
         </div>
       )}
     </div>

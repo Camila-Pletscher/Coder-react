@@ -3,7 +3,7 @@ import styles from "./CartWidget.module.css";
 import "materialize-css/dist/css/materialize.min.css";
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 function CartWidget() {
   const cartContext = useContext(CartContext);

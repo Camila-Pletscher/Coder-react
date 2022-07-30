@@ -72,7 +72,7 @@ export const CartProvider = ({children}) => {
 
   }
 
-  //FX PARA ELIMINAR PRODUCTO DEL CARRITO 
+  //FX PARA REDUCIR CANTIDAD DEL CARRITO 
 
   const deleteItemToCart = (product) => {
     //Busco si el producto esta en el carrito y lo guardo en incart
@@ -96,6 +96,16 @@ export const CartProvider = ({children}) => {
     }
   }
 
+    //FX PARA ELIMINAR PRODUCTO DEL CARRITO 
+
+    const deleteItemTotalToCart = (product) => {
+     
+        setCartItems(
+          cartItems.filter(productInCart => productInCart.id !== product.id)
+        )
+      
+    }
+
   //FX PARA VACIAR EL CARRITO 
 
   const emptyCart = () => {
@@ -109,7 +119,7 @@ export const CartProvider = ({children}) => {
   );
 
   return (
-    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart, addAmountToCart,total}}>
+    <CartContext.Provider value={{cartItems, addItemToCart, deleteItemToCart, emptyCart, addAmountToCart,total, deleteItemTotalToCart}}>
       {children}
     </CartContext.Provider>
   )
