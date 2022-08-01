@@ -35,31 +35,59 @@ function Cart() {
           </div>
 
           {cartItems.length === 0 ? (
-            <p>Tu carrito esta vacio</p>
+            <div className={styles.carritoVacio}>
+              <p>Tu carrito está vacio</p>
+              <Link to="/services">
+              <button>
+                Ir a comprar
+              </button>
+              </Link>
+            </div>
+            
           ) : (
             <div className={styles.contProducts}>
-              <div>
+              <div className={styles.contDetail}>
                 <div>
                   {cartItems?.map((item) => (
                     <ItemCart {...item} key={item.id} />
                   ))}
                 </div>
 
-                <div>
-                  <p>
-                    Cantidad de items: {productsLength}
-                  </p>
+                <div className={styles.contAmount}>
+                  <div className={styles.contProductosAdd}>
+                    <p>Productos agregados: {productsLength}</p>
+                  </div>
+                  <div className={styles.contVaciar}>
+                    <button onClick={emptyCart}>
+                      <div>
+                        <i class="material-icons">delete_forever</i>
+                      </div>
+                      <div>Vaciar</div>
+                    </button>
+                  </div>
                 </div>
-                <div>
-                <button onClick={emptyCart}>Vaciar</button>
-                </div>
-                
               </div>
-              <div>
-                <p>Total: {total}</p>
-                <Link to="/finalizar">
-                  <button>Finalizar compra</button>
-                </Link>
+
+              <div className={styles.contTotalLine}>
+                <div className={styles.contTotal}>
+                  <div className={styles.totalTxt}>
+                    <p>Total:</p>
+                  </div>
+                  <div className={styles.totalNum}>
+                    <p>${total}</p>
+                  </div>
+                </div>
+                <div className={styles.line}></div>
+                <div className={styles.contComprar}>
+                  <Link to="/finalizar">
+                    <button>
+                      <div>
+                        <i class="material-icons">check_circle</i>
+                      </div>
+                      <div>Comprar carrito</div>
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           )}

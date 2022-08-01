@@ -1,0 +1,178 @@
+.contTitleBuy {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.contBuyIcon {
+    display: flex;
+}
+
+.titleBuy {
+    display: flex;
+}
+
+.titleBuy p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contInversion {
+    display: flex;
+    border: solid #969696 1px;
+    border-radius: 12px;
+    padding: 2rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    width: 45%;
+    margin: 1em;
+}
+
+.contGeneral {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contTotal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gracias {
+    margin-bottom: 2em;
+}
+
+.gracias p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.contInversionTxt p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.contInversionNum p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.line {
+    height: 1px;
+    background-color: #969696;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.contForm {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid #969696 1px;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1em;
+}
+
+.complete {
+    margin-bottom: 2em;
+}
+
+.complete p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: left;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contSend {
+    display: flex;
+    margin-top: 2em;
+}
+
+.contSend button {
+    background-color: #8F9EC7;
+    border: 0;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+
+}
+
+.contSend button i {
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 0.2em 0 0 !important;
+    display: flex;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    }
+
+    @media screen and (max-width: 992px) {
+    
+    }
+
+    @media screen and (max-width: 768px) {
+    
+    }
+
+    @media screen and (max-width: 576px) {
+        .contForm {
+            width: 100%;
+        }
+
+        .contInversion {
+            width: 100%;
+        }
+    }

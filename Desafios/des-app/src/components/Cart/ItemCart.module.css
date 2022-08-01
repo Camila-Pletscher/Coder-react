@@ -1,10 +1,19 @@
-.contImage {
-    padding: 2em;
-    
+.contGeneral {
+    display: flex;
 }
 
+.contGeneralLine {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .contImage img {
-    width: 200px;
+    width: 85px;
     margin: auto;
 }
 
@@ -14,7 +23,8 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 1em;
 }
 
 .contInfo2 {
@@ -24,6 +34,9 @@
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+    margin-right: 6em;
+    margin-left: 1em;
+    
 }
 
 .contAmount {
@@ -33,4 +46,52 @@
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+}
+
+.contAmount p {
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.name p {
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1em;
+    margin: 0;
+}
+
+.contTotal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons button {
+    background-color: rgb(229, 227, 227);
+    border: 0;
+    color: #fff;
+    margin: 0.2em;
+
+}
+
+.line {
+    height: 1px;
+    background-color: #969696;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.amount p {
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size: 1em;
+    margin: 0;
+}
+
+.deleteItem i {
+    color: #D16060 !important;
 }
