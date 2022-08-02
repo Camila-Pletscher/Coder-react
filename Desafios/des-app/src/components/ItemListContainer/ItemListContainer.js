@@ -14,6 +14,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
+import BannerCat from "./BannerCat";
 
 function ItemListContainer() {
   const [items, setItems] = useState([]);
@@ -64,7 +65,7 @@ function ItemListContainer() {
     </div>
   ) : idcategoria ? (
     <>
-      <p>{idcategoria}</p>
+      <BannerCat idcategoria={idcategoria}/>
       <div className="contItemList">
         <ItemList items={items} />
       </div>
