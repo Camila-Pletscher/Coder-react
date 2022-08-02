@@ -1,5 +1,6 @@
 .contWelcome {
     background-color: #B19BC4;
+    height: 100vh;
 }
 
 .contLogo {
@@ -48,9 +49,19 @@
 .links {
     color: #fff;
     border: 1px solid #fff;
-    padding: 1em 3em;
+    padding: 1em 5em;
     border-radius: 1em;
-    margin: 1em 0em;
+    margin: 1.5em 0em;
+    width: 30em;
+}
+
+.links p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
 }
 
 a {

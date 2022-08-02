@@ -17,21 +17,74 @@
 }
 
 .cardTitle {
-    color: #000;
-    bottom: 0;
-    left: 0;
     max-width: 100%;
-    padding: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #B19BC4;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.cardContent {
-    padding: 0px 14px;
-    border-radius: 0 0 2px 2px;
+.cardTitle p {
+    color: #000;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
 }
+
+.precio {
+    margin-left: 1em;
+}
+
+.precio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    color: #EBC163;
+}
+
+.subtitulo {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.subtitulo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.add {
+    display: flex;
+    margin: 1em;
+}
+
+.add button {
+    border: 0;
+    background-color: #ACCBCD;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.addIcon i {
+    color: #fff !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0.3em 0 !important;
+    display: flex;
+}
+
+
 
 

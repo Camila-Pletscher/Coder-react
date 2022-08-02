@@ -36,29 +36,25 @@ function ItemListContainer() {
     setTimeout(() => {
       const db = getFirestore();
 
-
       if (idcategoria) {
         const q = query(
-            collection(db, "services"),
-            where("categoria", "==", idcategoria)
-          );
-          getDocs(q)
-        .then((snapshot) => {
-          setItems(snapshot.docs.map((doc) => doc.data()));
-        })
-        .finally(() => setIsLoading(false));
+          collection(db, "services"),
+          where("categoria", "==", idcategoria)
+        );
+        getDocs(q)
+          .then((snapshot) => {
+            setItems(snapshot.docs.map((doc) => doc.data()));
+          })
+          .finally(() => setIsLoading(false));
       } else {
-        const dataIt = collection(db, "services")
+        const dataIt = collection(db, "services");
 
         getDocs(dataIt)
-        .then((snapshot) => {
-          setItems(snapshot.docs.map((doc) => doc.data()));
-        })
-        .finally(() => setIsLoading(false));
+          .then((snapshot) => {
+            setItems(snapshot.docs.map((doc) => doc.data()));
+          })
+          .finally(() => setIsLoading(false));
       }
-
-      
-        
     }, 2000);
   }, [idcategoria]);
 
@@ -66,6 +62,14 @@ function ItemListContainer() {
     <div className="progress">
       <div className="indeterminate"></div>
     </div>
+  ) : idcategoria ? (
+    <>
+      <p>{idcategoria}</p>
+      <div className="contItemList">
+        <ItemList items={items} />
+      </div>
+    </>
+    
   ) : (
     <>
       <Banner></Banner>
