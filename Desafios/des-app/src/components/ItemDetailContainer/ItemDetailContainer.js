@@ -44,7 +44,7 @@ function ItemDetailContainer() {
           <div className="indeterminate"></div>
       </div>
   ) :
-  (<div className="cont-img"><ItemDetail services={services} /></div>)
+  (<ItemDetail services={services} />)
   );
 }
 

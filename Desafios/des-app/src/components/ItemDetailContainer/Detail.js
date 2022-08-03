@@ -1,5 +1,4 @@
 import styles from "./Detail.module.css";
-import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
@@ -14,17 +13,41 @@ function Detail(service) {
 
   return (
     <>
-      <div className={styles.contDetail} key={service.id}>
-        <div className={styles.contInfo}>
-          <div className={styles.title}>{service.name}</div>
-          <div className={styles.descrip}>{service.descripcion}</div>
-          <div className={styles.precio}>Inversión: ${service.precio}</div>
+      <div className={styles.contenedor}>
+        <div className={styles.contGeneral}>
+          <div className={styles.contImage}>
+            <img src={service.image} alt={service.name} />
+          </div>
+          <div className={styles.contInfo}>
+            <div>
+              <div>
+                <p>{service.name}</p>
+              </div>
+              <div>
+                <p>{service.subtitulo}</p>
+              </div>
+              <div>
+                <p>{service.precio}</p>
+              </div>
+            </div>
+            <div>line</div>
+            <div>
+              <p>{service.descripcion}</p>
+            </div>
+
+            <div>
+              <ItemCount item={service} onAdd={onAdd} />
+            </div>
+
+            <div>Categoria:{service.categoria}</div>
+          </div>
         </div>
-        <div className={styles.contImage}>
-          <img src={service.image} alt={service.name} />
-          
+        <div className={styles.contDescripcionFin}>
           <div>
-            <ItemCount item={service} onAdd={onAdd} />
+            <p>descripcion</p>
+          </div>
+          <div>
+            <p>{service.descripcion}</p>
           </div>
         </div>
       </div>

@@ -6,13 +6,13 @@ import './ItemDetail.css';
 
 function ItemDetail({services}) {
   return (
-    <div>
+    <>
       {services?.map ((service) => (
                 <Detail 
                     {...service} key={service.id}
                 />
             ))}
-    </div>
+    </>
   );
 }
 
