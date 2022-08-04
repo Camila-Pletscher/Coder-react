@@ -1,0 +1,44 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 0em;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contInfo {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contImage {
+    display: flex;
+    width: 45%;
+}
+
+.contImage img {
+    width: 100%;
+    
+}
+
+.contTitulo p {
+    font-family: 'Parisienne', cursive;
+    color: #B19BC4;
+    font-size: 3em;
+}
+
+.contDescripcion p {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1em;
+    line-height: 2em;
+}

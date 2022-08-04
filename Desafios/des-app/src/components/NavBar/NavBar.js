@@ -12,7 +12,7 @@ import { NavDropdown } from 'react-bootstrap';
 function NavBar() {
     const categories = [
       {id: 'Identidad', address: '/categoria/Identidad', text: 'Identidad'},
-      {id: 'Packaging', address: '/categoria/Packaging', text: 'Packaging'},
+      {id: 'Packaging', address: '/categoria/Packaging', text: 'Packaging & Papelería'},
       {id: 'Redes', address: '/categoria/Redes', text: 'Redes'},
     ]
     return (
