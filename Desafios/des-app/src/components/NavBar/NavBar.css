@@ -1,18 +1,14 @@
-
-.navbar-nav {
-    background-color: #f8f9fa;
+.navbar {
+    position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
-i.material-icons {
-    line-height: 0px !important;
-    height: auto !important;
-}
-
-nav a {
-    text-decoration: none !important;
-}
-
-.nav-link {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+nav {
+    height: inherit !important;
+    line-height: inherit !important;
 }
