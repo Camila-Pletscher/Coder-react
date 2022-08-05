@@ -24,33 +24,45 @@ function ItemCount({ item }) {
 
   return count ? (
     <>
+    <div className={styles.contAmountSeleccionada}>
       <p>Cantidad seleccionada: {amount}</p>
+      </div>
       <Link to="/cart">
-        <div className={styles.contEndButton}>
-          <button className={styles.endButton}>Ver carrito</button>
+        <div className={styles.end}>
+        <button onClick={() => addAmountToCart(item, amount, setCount)}>
+          <div className={styles.endIcon}>
+            <i class="material-icons">shopping_cart</i>
+          </div>
+          <div>Ver el carrito</div>
+        </button>
         </div>
       </Link>
     </>
   ) : (
     <div className={styles.contCount}>
       <div className={styles.contButton}>
-        <div className={styles.circle}>
-          <button onClick={sumar}>
-            <i className="material-icons">add</i>
-          </button>
-        </div>
-        <div>
+        <div className={styles.contAmount}>
           <p>{amount}</p>
         </div>
-        <div className={styles.circle}>
-          <button onClick={restar}>
-            <i className="material-icons">remove</i>
-          </button>
+        <div className={styles.contContador}>
+          <div className={styles.circle}>
+            <button onClick={sumar}>
+              <i className="material-icons">arrow_drop_up</i>
+            </button>
+          </div>
+          <div className={styles.circle}>
+            <button onClick={restar}>
+              <i className="material-icons">arrow_drop_down</i>
+            </button>
+          </div>
         </div>
       </div>
       <div className={styles.add}>
         <button onClick={() => addAmountToCart(item, amount, setCount)}>
-          Agregar al carrito
+          <div className={styles.addIcon}>
+            <i class="material-icons">add_shopping_cart</i>
+          </div>
+          <div>Agregar al carrito</div>
         </button>
       </div>
     </div>

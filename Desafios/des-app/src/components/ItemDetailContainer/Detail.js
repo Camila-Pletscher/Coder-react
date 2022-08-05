@@ -19,34 +19,33 @@ function Detail(service) {
             <img src={service.image} alt={service.name} />
           </div>
           <div className={styles.contInfo}>
-            <div>
-              <div>
+            <div className={styles.contSubInfo}>
+              <div className={styles.contName}>
                 <p>{service.name}</p>
               </div>
-              <div>
+              <div className={styles.contSubtitulo}>
                 <p>{service.subtitulo}</p>
               </div>
-              <div>
-                <p>{service.precio}</p>
+              <div className={styles.contPrecio}>
+                <p>${service.precio}</p>
               </div>
             </div>
-            <div>line</div>
-            <div>
-              <p>{service.descripcion}</p>
+            <div className={styles.line}></div>
+            <div className={styles.contDescripcion}>
+              <p>{service.contiene}</p>
             </div>
 
             <div>
               <ItemCount item={service} onAdd={onAdd} />
             </div>
 
-            <div>Categoria:{service.categoria}</div>
           </div>
         </div>
         <div className={styles.contDescripcionFin}>
-          <div>
-            <p>descripcion</p>
+          <div className={styles.contDescripTit}>
+            <p>Descripción</p>
           </div>
-          <div>
+          <div className={styles.contDescripTxt}>
             <p>{service.descripcion}</p>
           </div>
         </div>

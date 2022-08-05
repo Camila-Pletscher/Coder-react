@@ -17,37 +17,107 @@
     align-items: center;
 }
 
-.circle {
+.contContador {
     display: flex;
-    padding: 5px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle button {
-    background-color: #fff;
-    border-radius: 30px;
+    display: flex;
     border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.circle button i {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+.contAmount {
+    border: 1px solid #eee;
+    padding: 0.1em 1em;
+    margin-right: 1em;
+}
+
+.contAmount p {
+    margin: 0;
+}
+
+.contAmountSeleccionada p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.contAmountSeleccionada  {
+    margin: 1em 0;
+    
 }
 
 .add {
     display: flex;
+    margin: 1em;
+}
+
+.end button {
+    border: 0;
+    background-color: #ACCBCD;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 1em;
 }
 
+.endIcon i {
+    color: #fff !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0.3em !important;
+    display: flex;
+}
+
+
+
 .add button {
-    background-color: #B19BC4;
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    padding: 1em;
     border: 0;
+    background-color: #ACCBCD;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.addIcon i {
+    color: #fff !important;
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0.3em 0 !important;
+    display: flex;
 }
 
 button:hover {
     opacity: 0.5;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    padding: 5px;
-}

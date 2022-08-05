@@ -10,7 +10,7 @@
 
 .contInfo {
     display: flex;
-    width: 35%;
+    width: 40%;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -21,7 +21,7 @@
 
 .contImage {
     display: flex;
-    width: 55%;
+    width: 50%;
     margin: 1em;
 }
 
@@ -34,7 +34,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -47,5 +47,93 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5em;
+    margin: 5em 1em;
+}
+
+.contDescripTit p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contDescripTxt p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+    margin: 0;
+    line-height: 2em;
+}
+
+.contSubInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contName p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.contName, .contPrecio {
+    margin: 1em 0;
+}
+
+
+.contSubtitulo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0;
+}
+
+.contPrecio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.line {
+    height: 1px;
+    background-color: #969696;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.contDescripcion p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 100;
+    margin: 0;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .contImage {
+        width: 100%;
+    }
+
+    .contInfo {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
 }
