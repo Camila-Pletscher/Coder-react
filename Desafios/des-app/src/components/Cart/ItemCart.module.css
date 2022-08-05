@@ -72,6 +72,7 @@
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .buttons button {
@@ -98,4 +99,9 @@
 
 .deleteItem i {
     color: #D16060 !important;
+}
+
+.remove {
+    border: 0;
+    background-color: #fff;
 }

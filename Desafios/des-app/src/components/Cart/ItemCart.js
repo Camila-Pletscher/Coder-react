@@ -34,7 +34,10 @@ function ItemCart(item) {
           <p>${item.precio * item.amount}</p>
         </div>
         <div className={styles.deleteItem} onClick={() => deleteItemTotalToCart(item)}>
+          <button className={styles.remove}>
           <i class="material-icons">delete_sweep</i>
+          </button>
+          
         </div>
       </div>
     </div>
