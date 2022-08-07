@@ -21,9 +21,11 @@ function Welcome() {
         <div className={styles.links}>
           <p>Proyectos</p>
         </div>
+        <Link to="/consultas">
         <div className={styles.links}>
           <p>Consultas</p>
         </div>
+        </Link>
         <Link to="/home">
           <div className={styles.links}>
             <p>Ver web</p>

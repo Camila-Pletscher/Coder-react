@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import FinCompra from './components/Cart/FinCompra';
 
 import { CartProvider } from './context/CartContext';
+import Consultas from './components/Consultas/Consultas';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/item/:iditem" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />}/>
         <Route path="/finalizar" element={<FinCompra />}/>
+        <Route path="/consultas" element={<Consultas/>}/>
       </Route>
         
       </Routes>
