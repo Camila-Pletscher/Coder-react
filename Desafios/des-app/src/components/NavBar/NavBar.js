@@ -25,6 +25,7 @@ function NavBar() {
           <Nav className="me-auto">
           <Nav.Link href="/" >Welcome</Nav.Link>
             <Nav.Link href="/home" >Home</Nav.Link>
+            <Nav.Link href="/consultas" >Consultas</Nav.Link>
             <NavDropdown title="Servicios" id="basic-nav-dropdown">
             {
               categories.map((cat) =>{

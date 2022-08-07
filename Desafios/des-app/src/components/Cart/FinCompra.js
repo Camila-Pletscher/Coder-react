@@ -75,18 +75,21 @@ function FinCompra() {
                   type="text"
                   onChange={(e) => setName(e.target.value)}
                   value={name}
+                   
                 />
                 <label>Email</label>
                 <input
                   type="email"
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
+                  
                 />
                 <label>Phone</label>
                 <input
                   type="number"
                   onChange={(e) => setCell(e.target.value)}
                   value={phone}
+                  
                 />
               </form>
             </div>
