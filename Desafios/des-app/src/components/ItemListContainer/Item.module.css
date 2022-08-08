@@ -3,7 +3,7 @@
     background-color: #fff;
     transition: box-shadow .25s;
     border-radius: 2px;
-    width: 45% !important;
+    width: 45%;
     box-shadow: 5px 5px 5px rgba(114, 114, 114, 0.662);
 }
 
@@ -83,6 +83,14 @@
     margin: 0 !important;
     padding: 0.3em 0 !important;
     display: flex;
+}
+
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 100%;
+        margin: 0 1em;
+    }
 }
 
 

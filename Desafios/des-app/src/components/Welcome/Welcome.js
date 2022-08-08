@@ -21,9 +21,6 @@ function Welcome() {
             <p>Servicios</p>
           </div>
         </Link>
-        <div className={styles.links}>
-          <p>Proyectos</p>
-        </div>
         <Link to="/consultas">
         <div className={styles.links}>
           <p>Consultas</p>

@@ -42,3 +42,19 @@
     font-size: 1em;
     line-height: 2em;
 }
+
+@media screen and (max-width: 576px) {
+    .contInfo {
+        width: 100%;
+        margin: 0 1.5em;
+    }
+
+    .contImage {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .contTitulo p {
+        font-size: 2.5em;
+    }
+}

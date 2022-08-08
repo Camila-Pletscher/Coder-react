@@ -27,6 +27,7 @@ function ItemCount({ item }) {
     <div className={styles.contAmountSeleccionada}>
       <p>Cantidad seleccionada: {amount}</p>
       </div>
+      <div className={styles.buttons}>
       <Link to="/cart">
         <div className={styles.end}>
         <button onClick={() => addAmountToCart(item, amount, setCount)}>
@@ -37,6 +38,17 @@ function ItemCount({ item }) {
         </button>
         </div>
       </Link>
+      <Link to="/services">
+        <div className={styles.end}>
+        <button>
+          <div className={styles.endIcon}>
+            <i class="material-icons">shopping_cart</i>
+          </div>
+          <div>Seguir comprando</div>
+        </button>
+        </div>
+      </Link>
+      </div>
     </>
   ) : (
     <div className={styles.contCount}>

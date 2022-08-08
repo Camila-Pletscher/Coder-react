@@ -202,3 +202,27 @@
     font-weight: 300;
     font-size: 1em;
 }
+
+@media screen and (max-width: 778px) {
+    .contProducts {
+        width: 90%;
+        margin: auto;
+    }
+
+    .titleCart p {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .contDetail {
+        width: 100%;
+        margin-top: 2em;
+        padding: 1em;
+    }
+
+    .contTotalLine {
+        margin-top: 2em;
+    }
+
+    
+}
