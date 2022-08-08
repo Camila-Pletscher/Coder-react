@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Welcome to Pyc Design App!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started, you need to download the project from Github. And then type in the console: 
+- npm install
 
 ## Available Scripts
 
@@ -14,57 +15,45 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# Welcome
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This page welcomes you to the site. It only **appears once**.
 
-### `npm run build`
+## Home
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On this page you will find information about **'design pyc'**.  And you can contact directly with the button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Servicios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+On this page you will find all the design pyc services. The cards are created with a map that consults the information to **firebase**. And you could filter by the following categories:
 
-### `npm run eject`
+- Identidad 
+- Packaging & Papelería
+- Redes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can also add products to the cart. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Categorías
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Each category has its own **dynamic banner**, which also requests the information from firebase.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Detail
 
-## Learn More
+If you click on the product image, you can see the detail of this product. And you can also add this product to the cart and choose the **quantity**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Cart
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In the cart you can see the detail of the products added to the cart and its **total**. At the end of the purchase an order number will be given. that order will be stored in the **firebase** orders collection.
 
-### Code Splitting
+You can modify the quantity of each product or remove it completely from the cart. You can also empty the cart in its entirety.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Consultas
 
-### Analyzing the Bundle Size
+With this form you can make inquiries that will be sent through the **EMAILJS** api.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# Firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The information of all the services are stored in **firebase**. 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In firebase there is a services collection that has the information of the **services**. Another collection with the purchase orders that come from the app, called **orders**. And another called **banners** with the information of each category.
