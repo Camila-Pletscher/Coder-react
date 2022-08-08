@@ -68,3 +68,12 @@ a {
     text-decoration: none;
 }
 
+.contDescrip p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+

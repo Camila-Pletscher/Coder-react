@@ -1,0 +1,184 @@
+.contImage {
+    width: 55%;
+}
+
+.contImage img {
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.contBanner {
+    width: 100%;
+}
+
+.contBanner img {
+    width: 100%;
+}
+
+.contInfo {
+    width: 100%;
+}
+
+.contIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contIntroImg {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    flex-direction: row;
+}
+
+.contIntroTxt {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3em;
+}
+
+.contFrase p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+}
+
+.contTitulo p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #EBC163;
+    margin: 0;
+}
+
+.contTitulo {
+    padding: 1em 0em;
+}
+
+.contBienvenida p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #B19BC4;
+    margin: 0;
+    text-align: center;
+}
+
+.contBienvenida {
+    padding: 1em 0em 0em 0em;
+}
+
+.contDescripcion p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+    line-height: 2em;
+    
+}
+
+.contDescripcion {
+    padding: 2em;
+    width: 70%;
+}
+
+.contEstudio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: #000;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contDelega p {
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    color: #B19BC4;
+    margin: 0;
+    text-align: center;
+}
+
+.contDelega{
+    padding: 1em;
+}
+
+p {
+    margin: 0;
+}
+
+.contElegirnos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5em;
+    background-color: #F4F1F7;
+    padding-bottom: 2em;
+}
+
+.contTxt p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+    line-height: 2em;
+}
+
+.contTxt{
+    width: 70%;
+    padding: 2em;
+}
+
+.contContacto button {
+    background-color: #ACCBCD;
+    border: 0;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.contContacto button i {
+    color: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    padding: 0 0.2em 0 0 !important;
+}

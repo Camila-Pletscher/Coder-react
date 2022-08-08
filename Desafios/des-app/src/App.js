@@ -11,6 +11,7 @@ import FinCompra from './components/Cart/FinCompra';
 
 import { CartProvider } from './context/CartContext';
 import Consultas from './components/Consultas/Consultas';
+import Home from './components/Home/Home';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/cart" element={<Cart />}/>
         <Route path="/finalizar" element={<FinCompra />}/>
         <Route path="/consultas" element={<Consultas/>}/>
+        <Route path="/home" element={<Home/>}/>
       </Route>
         
       </Routes>

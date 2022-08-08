@@ -8,6 +8,9 @@ function Welcome() {
       <div className={styles.contLogo}>
         <img src={logo} alt="logo pyc" />
       </div>
+      <div className={styles.contDescrip}>
+        <p>Estudio de diseño y branding</p>
+      </div>
       <div className={styles.contSaludo}>
         <div className={styles.saludo}>¡Hola!</div>
         <div className={styles.frase}>Delegá para crecer</div>
