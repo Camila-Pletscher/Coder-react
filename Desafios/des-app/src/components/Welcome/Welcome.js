@@ -1,12 +1,11 @@
 import styles from "./Welcome.module.css";
-import logo from "../../logo-pyc.png";
 import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
     <div className={styles.contWelcome}>
       <div className={styles.contLogo}>
-        <img src={logo} alt="logo pyc" />
+        <img src="https://i.postimg.cc/C5vS4R6y/logo-pyc.png" alt="logo pyc" />
       </div>
       <div className={styles.contDescrip}>
         <p>Estudio de diseño y branding</p>

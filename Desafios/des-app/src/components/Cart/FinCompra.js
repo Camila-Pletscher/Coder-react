@@ -3,8 +3,13 @@ import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import Swal from "sweetalert2";
 import styles from "./FinCompra.module.css";
+import { useNavigate } from "react-router-dom";
+
 
 function FinCompra() {
+
+  const navigate = useNavigate();
+
   const { cartItems, total } = useContext(CartContext);
 
   const [name, setName] = useState("");
@@ -25,8 +30,8 @@ function FinCompra() {
     const ordersCollection = collection(db, "orders");
 
     addDoc(ordersCollection, order).then(({ id }) => {
-      Swal.fire(`Orden de compra: ${id}`);
-    });
+        Swal.fire(`Orden de compra: ${id}`);
+    })
   };
 
   const cashOutSubmit = (e) => {
@@ -35,6 +40,9 @@ function FinCompra() {
     setName("");
     setEmail("");
     setCell("");
+    setTimeout(() => {
+      navigate('/services');
+    }, 1000);
   };
 
   return (
@@ -93,14 +101,18 @@ function FinCompra() {
                 />
               </form>
             </div>
+            
             <div className={styles.contSend}>
+            
               <button onClick={cashOutSubmit}>
                 <div>
                   <i class="material-icons">send</i>
                 </div>
                 <div>Enviar</div>
               </button>
+            
             </div>
+            
           </div>
         </div>
       </div>

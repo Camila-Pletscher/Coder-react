@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 // Creamos el context sin pasarle ningun parametro
 export const CartContext = createContext();
@@ -45,6 +46,14 @@ export const CartProvider = ({children}) => {
     } else {
       setCartItems([...cartItems, {...product, amount: 1}])
     }
+
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Producto agregado con éxito',
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
 
   //FX PARA AGREGAR DESDE DETAIL 

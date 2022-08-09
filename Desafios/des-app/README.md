@@ -57,3 +57,23 @@ With this form you can make inquiries that will be sent through the **EMAILJS** 
 The information of all the services are stored in **firebase**. 
 
 In firebase there is a services collection that has the information of the **services**. Another collection with the purchase orders that come from the app, called **orders**. And another called **banners** with the information of each category.
+
+## localStorage
+The cart is saved in the **localStorage** so that when opening and closing the page the products are not lost.
+
+## Images host
+The images were uploaded to https://postimages.org/
+
+## Context
+The functions used throughout the app were developed in the **context**.
+
+## Dependencies used
+
+- EmailJS
+- Bootstrap
+- Firebase
+- Materialize-css
+- React-bootstrap
+- React-dom
+- React-router-dom
+- Sweetalert2

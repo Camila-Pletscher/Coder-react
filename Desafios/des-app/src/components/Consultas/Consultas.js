@@ -22,7 +22,7 @@ function Consultas() {
 
   const messageOk = () => {
     Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Su consulta fue enviada con éxito',
         showConfirmButton: false,
