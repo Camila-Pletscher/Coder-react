@@ -1,6 +1,7 @@
 .contWelcome {
     background-color: #B19BC4;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 5em;
 }
 
 .contLogo {
