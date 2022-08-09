@@ -1,5 +1,4 @@
 import "./ItemListContainer.css";
-// import ItemCount from './ItemCount';
 import ItemList from "./ItemList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -7,8 +6,6 @@ import Banner from "../Home/Banner";
 
 import {
   collection,
-  doc,
-  getDoc,
   getDocs,
   getFirestore,
   query,
@@ -21,16 +18,6 @@ function ItemListContainer() {
   const [isLoading, setIsLoading] = useState(true);
 
   const { idcategoria } = useParams();
-
-  // useEffect(() => {
-  //     setIsLoading(true);
-  //     setTimeout(() => {
-  //         fetch ('../data/data.json')
-  //         .then ((resp) => resp.json())
-  //         .then((data) => {setItems(idcategoria ? data.filter((items) => items.categoria === idcategoria) : data)})
-  //         .finally (() => setIsLoading(false))
-  //     },2000)
-  // }, [idcategoria])
 
   useEffect(() => {
     setIsLoading(true);

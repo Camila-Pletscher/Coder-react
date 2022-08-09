@@ -1,5 +1,3 @@
-
-
 import "materialize-css/dist/css/materialize.min.css";
 import ItemDetail from "./ItemDetail";
 import { useEffect, useState } from "react";
@@ -10,17 +8,6 @@ function ItemDetailContainer() {
   const [services, setServices] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const {iditem} = useParams();
-
-  // useEffect(() => {
-  //   setIsLoading(true);
-  //   setTimeout(
-  //       ()=>
-  //       fetch("../data/data.json")
-  //       .then((resp) => resp.json())
-  //       .then((data) => {setServices(data.filter(i => i.id === iditem))})
-  //       .finally (() => setIsLoading(false))
-  //       ,2000);
-  // }, [])
 
   useEffect(() => {
     setIsLoading(true);

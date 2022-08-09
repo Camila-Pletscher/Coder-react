@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import styles from "./ItemCount.module.css";
 import "materialize-css/dist/css/materialize.min.css";
-import Swal from "sweetalert2";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
