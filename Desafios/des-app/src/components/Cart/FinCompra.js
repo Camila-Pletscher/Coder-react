@@ -40,9 +40,8 @@ function FinCompra() {
     setName("");
     setEmail("");
     setCell("");
-    setTimeout(() => {
-      navigate('/services');
-    }, 1000);
+    navigate('/services');
+    
   };
 
   return (

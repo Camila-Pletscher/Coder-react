@@ -4,7 +4,7 @@ import styles from './banner.module.css'
 function Banner() {
   return (
     <div className={styles.banner}>
-      <img src="https://i.im.ge/2022/08/02/FywQ5q.banner.png" alt="dise" />
+      <img src="https://i.postimg.cc/63cFRDyT/banner-chico.png" alt="dise" />
     </div>
   )
 }
